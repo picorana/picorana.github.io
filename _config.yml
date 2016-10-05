@@ -1,0 +1,53 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: jekyll-theme-hackcss
+description: > # this means to ignore newlines until "baseurl:"
+  A minimalistic theme for Jekyll, based on hack.css
+repository: https://github.com/picorana
+#baseurl: /me  # the subpath of your site, e.g. /blog
+url: https://picorana.github.io  # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  style: compressed
+
+# Theme settings
+theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
+
+# Customizations
+your_name: picorana
+email: dibartolomeo.sara@gmail.com
+
+navigation:
+  - text: Home
+    url: /
+  - text: Docs
+    url: /docs
+  - text: Examples
+    url: /examples
+  - text: Blog
+    url: /blog
+
+projects:
+  - name: uiii
+    description: a uii project
+    link: https://picorana.github.io/
+    image: 
+
+social:
+  - service: github
+    username: picorana
+    link: https://github.com/picorana
+
+# Plugins
+gems:
+  - jekyll-seo-tag
