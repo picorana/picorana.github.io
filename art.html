@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: art
+---
+
+<section>
+  <h1>Art</h1>
+  <p>
+    Here you can find some art I made (:
+  </p>
+</section>
+
+<section>
+  <h2>Watercolors</h2>
+  {% for image in site.static_files %}
+  <div> a </div>
+    {% if image.path contains 'watercolors' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        <div> a </div>
+    {% endif %}
+{% endfor %}
+
+<section>
+  <h2>Digital Painting</h2>
+</section>
+
+<section>
+  <h2>3d</h2>
+</section>
+
