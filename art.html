@@ -13,18 +13,26 @@ permalink: art
 <section>
   <h2>Watercolors</h2>
   {% for image in site.static_files %}
-  <div> a </div>
-    {% if image.path contains 'watercolors' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-        <div> a </div>
+    {% if image.path contains 'chile' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%"/>
     {% endif %}
-{% endfor %}
+  {% endfor %}
 
 <section>
   <h2>Digital Painting</h2>
+  {% for image in site.static_files %}
+    {% if image.path contains 'digital_painting' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%"/>
+    {% endif %}
+  {% endfor %}
 </section>
 
 <section>
   <h2>3d</h2>
+  {% for image in site.static_files %}
+    {% if image.path contains '3d' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%"/>
+    {% endif %}
+  {% endfor %}
 </section>
 
