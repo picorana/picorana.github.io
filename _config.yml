@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: jekyll-theme-hackcss
+title: picorana.github.io
 description: > # this means to ignore newlines until "baseurl:"
-  A minimalistic theme for Jekyll, based on hack.css
+  My personal website
 repository: https://github.com/picorana
 #baseurl: /me  # the subpath of your site, e.g. /blog
 url: https://picorana.github.io  # the base hostname & protocol for your site
@@ -25,7 +25,7 @@ theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
 
 # Customizations
 your_name: picorana
-email: dibartolomeo.sara@gmail.com
+email: dibartolomeo dot sara at gmail dot com
 
 navigation:
   - text: Home
