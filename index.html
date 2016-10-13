@@ -6,15 +6,61 @@ layout: default
 
   <section>
     <h1>personal website</h1>
-    Hello! I'm half computer science student, half artist. 
+    <div style="display: inline">
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    </div>
+    <br><br>Hello! I'm half computer science student, half artist. 
   </section>
 
   <section>
   	<h1> Projects overview </h1>
+	  	<div class="grid t-hackcss-cards">
+	  	{% for project in site.projects %}
+
+	    <div class="cell -6of12 t-hackcss-cards-cell">
+	      <div class="card">
+	        <header class="card-header">{{ project.name }}</header>
+	        <div class="card-content">
+	          <div class="inner">
+
+	            {% if project.image %}
+	            <img src="{{ project.image }}" class="t-hackcss-cards-image"
+	                 alt="{{ project.name }}"
+	                 title="{{ project.name }}"/>
+	            {% endif %}
+
+	            <p class="t-hackcss-cards-text" style="font-size: 10px">{{ project.description }}</p>
+	            <p class="t-hackcss-cards-link">
+	              <a href="{{ project.link }}" title="{{ project.name }}" target="_blank">
+	                 {{ project.name }}
+	               </a>
+	            </p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    {% endfor %}
+    </div>
+
+    
   </section>
 
   <section>
   	<h1> Artworks overview </h1>
+  	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.
+
   	{% for painting in site.drawings %}
   	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
   	{% endfor %}

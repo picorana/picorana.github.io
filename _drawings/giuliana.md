@@ -1,4 +1,5 @@
 ---
 layout: default
-img: giuliana.png
+img: giuliana.jpg
+technique: watercolor
 ---

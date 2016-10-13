@@ -36,13 +36,18 @@ navigation:
     url: /blog
 
 projects:
-  - name: uiii
-    description: a uii project
-    link: https://picorana.github.io/
-    image: 
+  - name: Clicken
+    description: An incremental game about having a barn. 6th prize overall and 1st prize in the fun category in Ludum Dare 28
+    link: http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=26439
+    image: /activities_img/clicken.jpg
+  - name: Poopfest
+    description: Small experiment with watercolour graphics. A game in which 2-4 players fight each other as birds. 1st prize for graphics and 2nd prize for gameplay at Global Game Jam Rome 2015
+    link: http://globalgamejam.org/2015/games/poopfest
+    image: /activities_img/poopfest.png
 
 collections:
   - drawings
+  - activities
 
 social:
   - service: github
