@@ -15,6 +15,9 @@ layout: default
 
   <section>
   	<h1> Artworks overview </h1>
+  	{% for painting in site.drawings %}
+  	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
+  	{% endfor %}
   </section>
 
   <section>
@@ -44,3 +47,4 @@ layout: default
   </section>-->
 
 </div>
+<script src = "{{site.baseurl}}/javascripts/js/lightbox-plus-jquery.js"></script>
