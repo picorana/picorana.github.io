@@ -32,10 +32,6 @@ navigation:
     url: /
   - text: Artworks
     url: /art
-  - text: Docs
-    url: /docs
-  - text: Examples
-    url: /examples
   - text: Blog
     url: /blog
 
@@ -44,6 +40,9 @@ projects:
     description: a uii project
     link: https://picorana.github.io/
     image: 
+
+collections:
+  - drawings
 
 social:
   - service: github
