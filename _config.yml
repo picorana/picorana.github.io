@@ -30,7 +30,9 @@ email: dibartolomeo dot sara at gmail dot com
 navigation:
   - text: Home
     url: /
-  - text: Artworks
+  - text: Projects
+    url: /projects
+  - text: Art
     url: /art
   - text: Blog
     url: /blog
@@ -40,14 +42,25 @@ projects:
     description: An incremental game about having a barn. 6th prize overall and 1st prize in the fun category in Ludum Dare 28
     link: http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=26439
     image: /activities_img/clicken.jpg
+    date: 2013-12-01
   - name: Poopfest
     description: Small experiment with watercolour graphics. A game in which 2-4 players fight each other as birds. 1st prize for graphics and 2nd prize for gameplay at Global Game Jam Rome 2015
     link: http://globalgamejam.org/2015/games/poopfest
     image: /activities_img/poopfest.png
+    date: 2015-01-01
+  - name: OMNOMNOM
+    description: A game about a fish that grows by eating other fishes
+    link: http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=26439
+    image: /activities_img/OMNOMNOM.png
+    date: 2014-02-01
+  - name: Electric Tree
+    description: a creative data visualization program, winner of the Cleanweb contest 2014
+    link: 
+    image: /activities_img/electrictree.png
+    date: 2014-03-01
 
 collections:
   - drawings
-  - activities
 
 social:
   - service: github

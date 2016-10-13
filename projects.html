@@ -1,0 +1,42 @@
+---
+layout: default
+permalink: projects
+---
+
+<section>
+  <h1>Projects</h1>
+</section>
+
+<section>
+  <div class="grid t-hackcss-cards">
+    {% assign items = site.projects | sort: 'date' %}
+      {% for project in items reversed %}
+
+      <div class="cell -6of12 t-hackcss-cards-cell">
+        <div class="card">
+          <header class="card-header">{{ project.name }}</header>
+          <div class="card-content">
+            <div class="inner">
+
+              {% if project.image %}
+              <img src="{{ project.image }}" class="t-hackcss-cards-image"
+                   alt="{{ project.name }}"
+                   title="{{ project.name }}"
+                   />
+              {% endif %}
+              <br>
+              <div class="t-hackcss-cards-text" style="font-size: 11px">{{ project.description }}</div>
+              <div style="font-size:10px; color: grey"> {{ project.date | date: '%B %Y' }} </div>
+              <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center">
+                   {{ project.name }}
+                 </a>
+                </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+<script src = "{{site.baseurl}}/javascripts/js/lightbox-plus-jquery.js"></script>
