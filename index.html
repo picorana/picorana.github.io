@@ -7,6 +7,7 @@ layout: default
   <section>
     <h1>personal website</h1>
     <div style="display: inline">
+    <!--<img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
     <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
     <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
     <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
@@ -18,8 +19,7 @@ layout: default
     <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
     <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
     <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
-    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
-    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>
+    <img src="{{site.baseurl}}/images/congaparrot.gif" style="border:0px;margin:0px;float:left;"/>-->
     </div>
     <br><br>Hello! I'm half computer science student, half artist. 
   </section>
@@ -38,15 +38,16 @@ layout: default
 	            {% if project.image %}
 	            <img src="{{ project.image }}" class="t-hackcss-cards-image"
 	                 alt="{{ project.name }}"
-	                 title="{{ project.name }}"/>
+	                 title="{{ project.name }}"
+	                 />
 	            {% endif %}
-
-	            <p class="t-hackcss-cards-text" style="font-size: 10px">{{ project.description }}</p>
-	            <p class="t-hackcss-cards-link">
-	              <a href="{{ project.link }}" title="{{ project.name }}" target="_blank">
+	            <br>
+	            <div class="t-hackcss-cards-text" style="font-size: 11px">{{ project.description }}</div>
+	            <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center">
 	                 {{ project.name }}
 	               </a>
-	            </p>
+	              </div>
+	           
 	          </div>
 	        </div>
 	      </div>
@@ -59,7 +60,7 @@ layout: default
 
   <section>
   	<h1> Artworks overview </h1>
-  	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.
+  	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.<br>
 
   	{% for painting in site.drawings %}
   	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
