@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (1.1.0)
-    exifr (1.2.5)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
@@ -15,9 +14,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-gallery-generator (1.0.4)
-      exifr (~> 1.2)
-      rmagick (~> 2.12)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-seo-tag (2.0.0)
@@ -35,7 +31,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    rmagick (2.16.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -45,7 +40,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-gallery-generator
   jekyll-seo-tag
 
 BUNDLED WITH
