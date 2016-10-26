@@ -26,8 +26,10 @@ layout: default
 
   <section>
   	<h1> Projects overview </h1>
+  		Find more projects <a href="{{site.baseurl}}/projects">here</a>!<br><br>
 	  	<div class="grid t-hackcss-cards">
-	  	{% for project in site.projects %}
+	  	{% assign items = site.projects | sort: 'date' | reverse %}
+	  	{% for project in items limit:2 %}
 
 	    <div class="cell -6of12 t-hackcss-cards-cell">
 	      <div class="card">
