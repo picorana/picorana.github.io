@@ -43,21 +43,79 @@ projects:
     link: http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=26439
     image: /activities_img/clicken.jpg
     date: 2013-12-01
+    type: game
+    tags: ludum_dare, processing, java, pixel art
   - name: Poopfest
     description: Small experiment with watercolour graphics. A game in which 2-4 players fight each other as birds. 1st prize for graphics and 2nd prize for gameplay at Global Game Jam Rome 2015
     link: http://globalgamejam.org/2015/games/poopfest
     image: /activities_img/poopfest.png
     date: 2015-01-01
+    type: game
+    tags: global_game_jam, processing, java, watercolors
   - name: OMNOMNOM
     description: A game about a fish that grows by eating other fishes
     link: http://ludumdare.com/compo/ludum-dare-29/?action=preview&uid=26439
     image: /activities_img/OMNOMNOM.png
     date: 2014-02-01
+    type: game
+    tags: threejs, javascript, 3d
   - name: Electric Tree
     description: a creative data visualization program, winner of the Cleanweb contest 2014
-    link: 
-    image: /activities_img/electrictree.png
+    image: /activities_img/electrictree0.png
     date: 2014-03-01
+    type: other
+    tags: java, processing, data, cleanweb
+  - name: PicoVR
+    description: an Android game that displays the capabilities of Google Cardboard by letting the player fly around in a virtual world, using an Android phone as virtual reality device and two wii controllers to simulate the movements of the wings. exhibited at Codemotion Rome 2015
+    image: 
+    date: 2015-03-01
+    type: game
+    tags: java, android, opengl, blender, cardboard
+  - name: How To Adventure
+    description: an RPG game with voxel graphics
+    link: http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=26439
+    image: /activities_img/howtoadventure0.png
+    date: 2014-08-01
+    type: game
+    tags: javascript, threejs, json, jquery, html5, blender, ludum_dare
+  - name: The Cathedral
+    description: an incremental game with pixel art graphics
+    link: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=26439
+    image: /activities_img/thecathedral0.jpg
+    date: 2014-12-01
+    type: game
+    tags: java, processing, incremental, ludum_dare
+  - name: SUPER NUKE ROMAN EMPIRE
+    description: a java game
+    link: http://ludumdare.com/compo/ludum-dare-27/?action=preview&uid=26439
+    image: /activities_img/supernukeromanempire0.png
+    date: 2013-08-01
+    type: game
+    tags: java, processing, ludum_dare
+  - name: Creative Brains
+    description: a multiplayer online quiz game for Android
+    image: /activities_img/creativebrains0.png
+    date: 2015-01-01
+    type: game
+    tags: java, android, soap, xml
+  - name: Reactable
+    description: 
+    image: 
+    date: 2015-06-01
+    type: art
+    tags:
+  - name: You Turing Complete Me
+    description: 
+    image: 
+    date: 2016-03-01
+    type: talk
+    tags: 
+  - name: Hypercar Drifter
+    description: Hypercar Drifter is a runner game in which you drive a flying car into a tunnel full of obstacles. As you go, your speed increases and more obstacles are spawned, adding difficulty to the game. If you hit an obstacle, the game is over and you have to restart from the beginning. The goal is to get as far as you can without hitting anything.
+    image: /activities_img/hypercardrifter0.png
+    date: 2016-09-01
+    type: game
+    tags: javascript, threejs, blender, lowpoly
 
 collections:
   - drawings
