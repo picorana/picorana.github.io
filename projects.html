@@ -5,6 +5,21 @@ permalink: projects
 
 <section>
   <h1>Projects</h1>
+  
+  <p class="filters">
+    <b># Filters:</b> <br>
+    <b>types:</b>
+    <a href="">game</a>
+    <a href="">talk</a>
+    <a href="">other</a> 
+    <br>
+    <b>tags:</b>
+    <a href="">ludum_dare</a>
+    <a href="">android</a>
+    <a href="">java</a> 
+  </p>
+
+  
 </section>
 
 <section>
@@ -14,25 +29,37 @@ permalink: projects
 
       <div class="cell -6of12 t-hackcss-cards-cell">
         <div class="card" style="margin-bottom: 10px;">
-          <header class="card-header">{{ project.name }}</header>
+          <header class="card-header"><b>{{ project.name }}</b></header>
           <div class="card-content">
             <div class="inner">
 
               {% if project.image %}
-              <center><img src="{{ project.image }}" 
-                  style="width:70%;"
+              <center>
+                <a href="{{ project.image }}" data-lightbox="image-1">
+                  <img src="{{ project.image }}" 
+                  style="width:60%;"
                    alt="{{ project.name }}"
                    title="{{ project.name }}"
-                   /></center>
+                   /></a>
+                   {% if project.image1 %}
+                    <a href="{{ project.image1 }}" data-lightbox="image-1">
+                    <img src="{{ project.image1 }}" 
+                  style="width:30%;"
+                   alt="{{ project.name }}"
+                   title="{{ project.name }}"
+                   /></a>
+                   {% endif %}
+              </center>
               {% endif %}
               <br>
-              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 100%;">{{ project.description }}</div>
+              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 110%;">{{ project.description }}</div>
               <div style="font-size:10px; color: grey"> {{ project.date | date: '%B %Y' }} </div>
+              {% if project.link %}
               <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center">
                    {{ project.name }}
                  </a>
                 </div>
-             
+              {% endif %}
             </div>
           </div>
         </div>
