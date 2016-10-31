@@ -29,37 +29,60 @@ permalink: projects
 
       <div class="cell -6of12 t-hackcss-cards-cell">
         <div class="card" style="margin-bottom: 10px;">
-          <header class="card-header"><b>{{ project.name }}</b></header>
+          <header class="card-header"><b>{{ project.name }} </b><span style="font-size:10px; color: grey">({{ project.date | date: '%B %Y'}})</span></header>
           <div class="card-content">
             <div class="inner">
 
               {% if project.image %}
-              <center>
-                <a href="{{ project.image }}" data-lightbox="image-1">
+              <center style="display: inline-block; white-space: nowrap">
+                  <div id="picture1">
+                  <a href="{{ project.image }}" data-lightbox="image-1">
                   <img src="{{ project.image }}" 
-                  style="width:60%;"
-                   alt="{{ project.name }}"
-                   title="{{ project.name }}"
-                   /></a>
-                   {% if project.image1 %}
+                  style="width:60%; position:relative"
+                  alt="{{ project.name }}"
+                  title="{{ project.name }}"
+                  /></a>
+                  </div>
+                  <div id="otherpictures" style=" max-height: 10px">
+                  {% if project.image1 %}
                     <a href="{{ project.image1 }}" data-lightbox="image-1">
                     <img src="{{ project.image1 }}" 
-                  style="width:30%;"
-                   alt="{{ project.name }}"
-                   title="{{ project.name }}"
-                   /></a>
-                   {% endif %}
+                    style="width:30%; position:relative"
+                    alt="{{ project.name }}"
+                    title="{{ project.name }}"
+                    /></a>
+                  {% endif %}
+                  {% if project.image2 %}
+                    <a href="{{ project.image2 }}" data-lightbox="image-1">
+                    <img src="{{ project.image2 }}" 
+                    style="width:30%;"
+                    alt="{{ project.name }}"
+                    title="{{ project.name }}"
+                    /></a>
+                  {% endif %}
+                  </div>
               </center>
               {% endif %}
+
               <br>
-              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 110%;">{{ project.description }}</div>
-              <div style="font-size:10px; color: grey"> {{ project.date | date: '%B %Y' }} </div>
-              {% if project.link %}
-              <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center">
-                   {{ project.name }}
-                 </a>
-                </div>
+              <center>
+              {% assign tags = project.tags | split: ', ' %}
+              {% for tag in tags limit:3 %}
+              <span style="font-size:10px; color: #999999; line-height: 120%">#{{tag}}</span>
+              {% endfor %}
+              <span style="font-size:10px; color: #999999; line-height: 120%">#...</span>
+              </center>
+
+              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 110%;">{{ project.description }}</div><br>
+
+              {% if project.team %}
+              <div style="font-size:10px; color: #555555; line-height: 120%"> team: {{ project.team }} </div>
               {% endif %}
+
+              {% if project.link %}
+              <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center"> {{ project.name }}</a></div>
+              {% endif %}
+
             </div>
           </div>
         </div>
