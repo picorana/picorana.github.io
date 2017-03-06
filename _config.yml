@@ -159,6 +159,32 @@ projects:
     team: Me, Alessio Lentini, Lorenzo Travagliati
     tags: javascript, threejs, blender, lowpoly
 
+  - name: Playmobil M*rda
+    description: 
+    image: /activities_img/playmobil0.jpg
+    date: 2017-01-01
+    type: game
+    team: Me, Andrea Rosati, Andrea Barbadoro, Bruno Laurencich, Tsuneo Kurihara
+    tags: processing, java, global_game_jam
+
+  - name: QR-VR
+    description: 
+    image: /activities_img/qrvr0.jpg
+    date: 2016-10-01
+    type: webapp
+    team: Me, Bruno Laurencich
+    tags: javascript, three.js
+
+  - name: Learning from the front page of the internet
+    link: http://picorana.github.io/reddit_analytics/graph1.html
+    description: 
+    image: /activities_img/reddit0.png
+    image1: /activities_img/reddit1.jpg
+    date: 2017-02-01
+    type: talk
+    team: Me
+    tags: python, reddit, javascript, d3.js, data_science, machine_learning, big_data
+
 collections:
   - drawings
 
