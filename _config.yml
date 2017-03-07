@@ -160,7 +160,8 @@ projects:
     tags: javascript, threejs, blender, lowpoly
 
   - name: Playmobil M*rda
-    description: 
+    description: Global Game Jam 2017 submission. You are a lego frog in a lego environment, and you need to blow up your opponent by jumping a lot.
+    link: http://globalgamejam.org/2017/games/playmobil-ma
     image: /activities_img/playmobil0.jpg
     date: 2017-01-01
     type: game
@@ -168,16 +169,16 @@ projects:
     tags: processing, java, global_game_jam
 
   - name: QR-VR
-    description: 
+    description: Template for implementing Virtual Reality in a mobile browser. Aimed at easily distributing VR apps at events without the need to download and install an app. Features the possibility to play videos, insert text areas and menus. Based on three.js.
     image: /activities_img/qrvr0.jpg
     date: 2016-10-01
     type: webapp
     team: Me, Bruno Laurencich
     tags: javascript, three.js
 
-  - name: Learning from the front page of the internet
+  - name: Clustering Reddit - Learning from the front page of the internet
     link: http://picorana.github.io/reddit_analytics/graph1.html
-    description: 
+    description: In this talk, held at Data Driven Innovation 2017, I explore how to use data obtained from Reddit to better understand how the community works by applying clustering algorithms and some simple text mining techniques to the comments and submissions.
     image: /activities_img/reddit0.png
     image1: /activities_img/reddit1.jpg
     date: 2017-02-01
