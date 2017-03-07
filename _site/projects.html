@@ -33,6 +33,13 @@
 
   <link href="/stylesheets/lightbox.css" rel="stylesheet">
 
+  <style>
+  .hidden {
+    display: none!important;
+    visibility: hidden!important;
+  }
+  </style>
+
   <!-- 'jekyll-seo' plugin -->
   <!-- Begin Jekyll SEO tag v2.0.0 -->
 <title>picorana.github.io - My personal website</title>
@@ -124,17 +131,29 @@
           <section>
   <h1>Projects</h1>
   
+  <br>
+  Here you can find some of my recent projects. <br>
+  You can filter the projects by clicking below.
+
   <p class="filters">
     <b># Filters:</b> <br>
     <b>types:</b>
-    <a href="">game</a>
-    <a href="">talk</a>
-    <a href="">other</a> 
+    <a class='filterbutton' onclick="filter('game')">game</a>
+    <a class='filterbutton' onclick="filter('talk')">talk</a>
+    <a class='filterbutton' onclick="filter('other')">other</a> 
     <br>
-    <b>tags:</b>
-    <a href="">ludum_dare</a>
-    <a href="">android</a>
-    <a href="">java</a> 
+    <b>technology:</b>
+    <a class='filterbutton' onclick="filter('android')">android</a>
+    <a class='filterbutton' onclick="filter('java')">java</a> 
+    <a class='filterbutton' onclick="filter('python')">python</a> 
+    <a class='filterbutton' onclick="filter('three.js')">three.js</a>
+    <a class='filterbutton' onclick="filter('javascript')">javascript</a>  
+    <a class='filterbutton' onclick="filter('processing')">processing</a> 
+    <br>
+    <a class='filterbutton' onclick="filter('ludum_dare')">ludum_dare</a>
+    <a class='filterbutton' onclick="filter('global_game_jam')">global_game_jam</a> 
+    <a class='filterbutton' onclick="filter('hackathon')">hackathon</a> 
+
   </p>
 
   
@@ -145,8 +164,11 @@
     
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='python reddit javascript d3.js data_science machine_learning big_data talk'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Clustering Reddit - Learning from the front page of the internet </b><span style="font-size:10px; color: grey">(February 2017)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -204,8 +226,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='processing java global_game_jam game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Playmobil M*rda </b><span style="font-size:10px; color: grey">(January 2017)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -256,8 +281,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='javascript three.js webapp'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>QR-VR </b><span style="font-size:10px; color: grey">(October 2016)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -304,8 +332,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='javascript threejs blender lowpoly game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Hypercar Drifter </b><span style="font-size:10px; color: grey">(September 2016)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -361,8 +392,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='turing_completeness codemotion talk'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>You Turing Complete Me </b><span style="font-size:10px; color: grey">(March 2016)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -418,8 +452,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='music processing java videomapping art art'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Reactable </b><span style="font-size:10px; color: grey">(June 2015)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -482,8 +519,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='java android opengl blender cardboard game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>PicoVR </b><span style="font-size:10px; color: grey">(March 2015)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -546,8 +586,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='java android soap xml game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Creative Brains </b><span style="font-size:10px; color: grey">(January 2015)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -610,8 +653,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='global_game_jam processing java watercolors game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Poopfest </b><span style="font-size:10px; color: grey">(January 2015)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -669,8 +715,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='java processing incremental ludum_dare game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>The Cathedral </b><span style="font-size:10px; color: grey">(December 2014)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -735,8 +784,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='javascript threejs json jquery html5 blender ludum_dare game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>How To Adventure </b><span style="font-size:10px; color: grey">(August 2014)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -801,8 +853,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='java processing data cleanweb other'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Electric Tree </b><span style="font-size:10px; color: grey">(March 2014)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -858,8 +913,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='threejs javascript 3d game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>OMNOMNOM </b><span style="font-size:10px; color: grey">(February 2014)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -910,8 +968,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='ludum_dare processing java pixel art game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>Clicken </b><span style="font-size:10px; color: grey">(December 2013)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -976,8 +1037,11 @@
       </div>
       
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='java processing ludum_dare game'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>SUPER NUKE ROMAN EMPIRE </b><span style="font-size:10px; color: grey">(August 2013)</span></header>
           <div class="card-content">
             <div class="inner">
@@ -1044,7 +1108,34 @@
     </div>
 
 <script src = "/javascripts/js/lightbox-plus-jquery.js"></script>
+<script> 
+  function filter(tag){
+    showContainer(tag);
+  }
 
+  function showContainer(tag) {
+
+    
+    var list = document.getElementsByClassName('filterbutton');
+    for (var item in list){
+      if (typeof list[item].setAttribute === 'function'){
+        if (list[item].innerHTML == tag){
+          list[item].setAttribute('style', 'background-color: #ff2e88; color: #ffffff; border-radius: 4px; padding:2px');
+        } else list[item].setAttribute('style', 'background-color: #ffffff; color: #ff2e88');
+      }
+      console.log(list[item])
+    }
+
+    var list = document.getElementsByClassName('t-hackcss-cards-cell');
+    for (var item in list){
+      if (typeof list[item].setAttribute === 'function'){
+        if (list[item].dataset.tags.split(' ').indexOf(tag) >= 0){
+          list[item].setAttribute('class', 'cell -6of12 t-hackcss-cards-cell');
+        } else list[item].setAttribute('class', 'cell -6of12 t-hackcss-cards-cell hidden');
+      } 
+    }
+  }
+</script>
         </main>
       </div>
 

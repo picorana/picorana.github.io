@@ -56,7 +56,7 @@ layout: default
   	<h1> Artworks overview </h1>
   	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.<br>
 
-  	{% for painting in site.drawings %}
+  	{% for painting in site.drawings limit:3 %}
   	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
   	{% endfor %}
   </section>

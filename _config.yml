@@ -66,7 +66,7 @@ projects:
     date: 2014-02-01
     type: game
     team: Me, Luca Di Bartolomeo
-    tags: threejs, javascript, 3d
+    tags: three.js, javascript, 3d
 
   - name: Electric Tree
     description: a creative data visualization program, winner of the Cleanweb contest 2014
@@ -75,7 +75,7 @@ projects:
     date: 2014-03-01
     type: other
     team: Me, Luca Di Bartolomeo
-    tags: java, processing, data, cleanweb
+    tags: java, processing, data_science, cleanweb, data_visualization, hackathon
 
   - name: PicoVR
     description: An Android game that displays the capabilities of Google Cardboard by letting the player fly around in a virtual world, using an Android phone as virtual reality device and two wii controllers to simulate the movements of the wings. Exhibited at Codemotion Rome 2015
@@ -96,7 +96,7 @@ projects:
     date: 2014-08-01
     type: game
     team: Me, Luca Di Bartolomeo
-    tags: javascript, threejs, json, jquery, html5, blender, ludum_dare
+    tags: javascript, three.js, json, jquery, html5, blender, ludum_dare
 
   - name: The Cathedral
     description: Help Russian people build an enormous cathedral, in the style of 1500's cathedrals with their colorful domes! Collect resources with mines and mills, get help from your workers through the use of faith and by providing them a place to stay. Unlock more buildings and more space, and develop a small town, while building the most glorious cathedral. Surprise at the end of the game!
@@ -157,7 +157,7 @@ projects:
     date: 2016-09-01
     type: game
     team: Me, Alessio Lentini, Lorenzo Travagliati
-    tags: javascript, threejs, blender, lowpoly
+    tags: javascript, three.js, blender, lowpoly
 
   - name: Playmobil M*rda
     description: Global Game Jam 2017 submission. You are a lego frog in a lego environment, and you need to blow up your opponent by jumping a lot.
@@ -166,7 +166,7 @@ projects:
     date: 2017-01-01
     type: game
     team: Me, Andrea Rosati, Andrea Barbadoro, Bruno Laurencich, Tsuneo Kurihara
-    tags: processing, java, global_game_jam
+    tags: processing, java, global_game_jam, hackathon
 
   - name: QR-VR
     description: Template for implementing Virtual Reality in a mobile browser. Aimed at easily distributing VR apps at events without the need to download and install an app. Features the possibility to play videos, insert text areas and menus. Based on three.js.
@@ -184,7 +184,7 @@ projects:
     date: 2017-02-01
     type: talk
     team: Me
-    tags: python, reddit, javascript, d3.js, data_science, machine_learning, big_data
+    tags: python, reddit, javascript, d3.js, data_science, machine_learning, big_data, data_visualization
 
 collections:
   - drawings

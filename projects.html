@@ -6,17 +6,29 @@ permalink: projects
 <section>
   <h1>Projects</h1>
   
+  <br>
+  Here you can find some of my recent projects. <br>
+  You can filter the projects by clicking below.
+
   <p class="filters">
     <b># Filters:</b> <br>
     <b>types:</b>
-    <a href="">game</a>
-    <a href="">talk</a>
-    <a href="">other</a> 
+    <a class='filterbutton' onclick="filter('game')">game</a>
+    <a class='filterbutton' onclick="filter('talk')">talk</a>
+    <a class='filterbutton' onclick="filter('other')">other</a> 
     <br>
-    <b>tags:</b>
-    <a href="">ludum_dare</a>
-    <a href="">android</a>
-    <a href="">java</a> 
+    <b>technology:</b>
+    <a class='filterbutton' onclick="filter('android')">android</a>
+    <a class='filterbutton' onclick="filter('java')">java</a> 
+    <a class='filterbutton' onclick="filter('python')">python</a> 
+    <a class='filterbutton' onclick="filter('three.js')">three.js</a>
+    <a class='filterbutton' onclick="filter('javascript')">javascript</a>  
+    <a class='filterbutton' onclick="filter('processing')">processing</a> 
+    <br>
+    <a class='filterbutton' onclick="filter('ludum_dare')">ludum_dare</a>
+    <a class='filterbutton' onclick="filter('global_game_jam')">global_game_jam</a> 
+    <a class='filterbutton' onclick="filter('hackathon')">hackathon</a> 
+
   </p>
 
   
@@ -27,8 +39,11 @@ permalink: projects
     {% assign items = site.projects | sort: 'date' %}
       {% for project in items reversed %}
 
-      <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
+      {% assign tags = project.tags | split: ', ' %}
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='{{ tags | join: " " }} {{ project.type }}'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
           <header class="card-header"><b>{{ project.name }} </b><span style="font-size:10px; color: grey">({{ project.date | date: '%B %Y'}})</span></header>
           <div class="card-content">
             <div class="inner">
@@ -91,3 +106,31 @@ permalink: projects
     </div>
 
 <script src = "{{site.baseurl}}/javascripts/js/lightbox-plus-jquery.js"></script>
+<script> 
+  function filter(tag){
+    showContainer(tag);
+  }
+
+  function showContainer(tag) {
+
+    
+    var list = document.getElementsByClassName('filterbutton');
+    for (var item in list){
+      if (typeof list[item].setAttribute === 'function'){
+        if (list[item].innerHTML == tag){
+          list[item].setAttribute('style', 'background-color: #ff2e88; color: #ffffff; border-radius: 4px; padding:2px');
+        } else list[item].setAttribute('style', 'background-color: #ffffff; color: #ff2e88');
+      }
+      console.log(list[item])
+    }
+
+    var list = document.getElementsByClassName('t-hackcss-cards-cell');
+    for (var item in list){
+      if (typeof list[item].setAttribute === 'function'){
+        if (list[item].dataset.tags.split(' ').indexOf(tag) >= 0){
+          list[item].setAttribute('class', 'cell -6of12 t-hackcss-cards-cell');
+        } else list[item].setAttribute('class', 'cell -6of12 t-hackcss-cards-cell hidden');
+      } 
+    }
+  }
+</script>
