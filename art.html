@@ -6,7 +6,9 @@ permalink: art
 <section>
   <h1>Art</h1>
   <p>
-    Here you can find some art I made (:
+    I am a passionate painter. I love to experiment with many different techniques. A lot of these drawings were made to be used as assets in some of the games I made. Here you can find a selection of my favourite works, classified by technique. <br><br>
+
+    <b>Click on the pictures to enlarge them.</b>
   </p>
 </section>
 
@@ -17,21 +19,31 @@ permalink: art
         <a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="watercolor"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
     {% endif %}
   {% endfor %}
-
+</section>
+<br>
 <section>
   <h2>Digital Painting</h2>
-  {% for image in site.static_files %}
-    {% if image.path contains 'digital_painting' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%"/>
+  {% for painting in site.drawings %}
+    {% if painting.technique == 'digital_painting' %}
+        <a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="watercolor"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
     {% endif %}
   {% endfor %}
 </section>
-
+<br>
 <section>
   <h2>3d</h2>
-  {% for image in site.static_files %}
-    {% if image.path contains '3d' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="30%"/>
+  {% for painting in site.drawings %}
+    {% if painting.technique == '3d' %}
+      <a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="watercolor"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
+    {% endif %}
+  {% endfor %}
+</section>
+<br>
+<section>
+  <h2>pixels</h2>
+  {% for painting in site.drawings %}
+    {% if painting.technique == 'pixels' %}
+      <a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="watercolor"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
     {% endif %}
   {% endfor %}
 </section>

@@ -1,5 +1,5 @@
 ---
 layout: default
-img: laracroft.jpg
+img: marlon.jpg
 technique: watercolor
 ---
