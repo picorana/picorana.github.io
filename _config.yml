@@ -160,7 +160,7 @@ projects:
     tags: javascript, three.js, blender, lowpoly
 
   - name: Playmobil M*rda
-    description: Global Game Jam 2017 submission. You are a lego frog in a lego environment, and you need to blow up your opponent by jumping a lot.
+    description: Global Game Jam 2017 submission. You are a lego frog in a lego environment, and you need to blow up your opponent by throwing bombs.
     link: http://globalgamejam.org/2017/games/playmobil-ma
     image: /activities_img/playmobil0.jpg
     date: 2017-01-01

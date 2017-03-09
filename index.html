@@ -11,7 +11,7 @@ layout: default
     </div>
     <br><div style='color: #ff2e88'><u><i># This website is under construction #</i></u></div>
     <br>Hello! I'm half computer science student, half artist. 
-    <br>This is my online curriculum: <a href="{{site.baseurl}}#education">Education</a> <a href="{{site.baseurl}}#awards">Awards and Talks</a> <a href="{{site.baseurl}}#work_experience">Work Experience</a>
+    <br>This is my online curriculum: <a href="{{site.baseurl}}#education">Education</a> <a href="{{site.baseurl}}#awards">Awards and Talks</a> <a href="{{site.baseurl}}#work_experience">Work Experience</a> <a href="{{site.baseurl}}#skills">Skills</a>
   </section>
 
   <section name='projects'>
@@ -21,32 +21,70 @@ layout: default
 	  	{% assign items = site.projects | sort: 'date' | reverse %}
 	  	{% for project in items limit:2 %}
 
-	    <div class="cell -6of12 t-hackcss-cards-cell">
-        <div class="card" style="margin-bottom: 10px;">
-          <header class="card-header">{{ project.name }}</header>
+	    {% assign tags = project.tags | split: ', ' %}
+      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='{{ tags | join: " " }} {{ project.type }}'>
+
+        
+        <div class="card" style="margin-bottom: 10px;" >
+          <header class="card-header"><b>{{ project.name }} </b><span style="font-size:10px; color: grey">({{ project.date | date: '%B %Y'}})</span></header>
           <div class="card-content">
             <div class="inner">
 
               {% if project.image %}
-              <center><img src="{{ project.image }}" 
-                  style="width:70%;"
-                   alt="{{ project.name }}"
-                   title="{{ project.name }}"
-                   /></center>
+              <center style="display: inline-block; white-space: nowrap">
+                  <div id="picture1">
+                  <a href="{{ project.image }}" data-lightbox="image-1">
+                  <img src="{{ project.image }}" 
+                  style="width:60%; position:relative"
+                  alt="{{ project.name }}"
+                  title="{{ project.name }}"
+                  /></a>
+                  </div>
+                  <div id="otherpictures" style=" max-height: 10px">
+                  {% if project.image1 %}
+                    <a href="{{ project.image1 }}" data-lightbox="image-1">
+                    <img src="{{ project.image1 }}" 
+                    style="width:30%; position:relative"
+                    alt="{{ project.name }}"
+                    title="{{ project.name }}"
+                    /></a>
+                  {% endif %}
+                  {% if project.image2 %}
+                    <a href="{{ project.image2 }}" data-lightbox="image-1">
+                    <img src="{{ project.image2 }}" 
+                    style="width:30%;"
+                    alt="{{ project.name }}"
+                    title="{{ project.name }}"
+                    /></a>
+                  {% endif %}
+                  </div>
+              </center>
               {% endif %}
+
               <br>
-              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 110%;">{{ project.description }}</div>
-              <div style="font-size:10px; color: grey"> {{ project.date | date: '%B %Y' }} </div>
-              <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center">
-                   {{ project.name }}
-                 </a>
-                </div>
-             
+              <center>
+              {% assign tags = project.tags | split: ', ' %}
+              {% for tag in tags limit:3 %}
+              <span style="font-size:10px; color: #999999; line-height: 120%">#{{tag}}</span>
+              {% endfor %}
+              <span style="font-size:10px; color: #999999; line-height: 120%">#...</span>
+              </center>
+
+              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 110%;">{{ project.description }}</div><br>
+
+              {% if project.team %}
+              <div style="font-size:10px; color: #555555; line-height: 120%"> team: {{ project.team }} </div>
+              {% endif %}
+
+              {% if project.link %}
+              <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center"> {{ project.name }}</a></div>
+              {% endif %}
+
             </div>
           </div>
         </div>
       </div>
-	    {% endfor %}
+      {% endfor %}
     </div>
 
     
