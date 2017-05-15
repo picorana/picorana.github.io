@@ -14,6 +14,54 @@ layout: default
     <br>This is my online curriculum: <a href="{{site.baseurl}}#education">Education</a> <a href="{{site.baseurl}}#awards">Awards and Talks</a> <a href="{{site.baseurl}}#work_experience">Work Experience</a> <a href="{{site.baseurl}}#skills">Skills</a>
   </section>
 
+  <br>
+
+  <section>
+    <h1>Posts</h1>
+
+    {% for post in site.posts limit:3 %}
+      {% assign nth = forloop.index0 | modulo:2 %}
+      <div class="media t-hackcss-media">
+
+        {% if nth == 0 %}
+        <div class="t-hackcss-media-shift media-left">
+          <img class="t-hackcss-media-image"
+               src="{{ post.image_preview }}" alt="{{ post.title }}"
+               title="{{ post.title }}" />
+        </div>
+        {% endif %}
+
+        <div class="media-body">
+          <div class="media-heading">
+            <span>{{ post.date | date_to_string }} &raquo;
+              {% if post.external_url %}
+                <a href="{{ post.external_url }}" target="_blank" title="{{ project.name }}">
+                  {{ post.title }}
+                </a>
+              {% else %}
+                <a href="{{ post.url | prepend: site.baseurl }}" title="{{ project.name }}">
+                  {{ post.title }}
+                </a>
+              {% endif %}
+            </span>
+          </div>
+          <div class="media-content">
+            {{ post.short_description }}
+          </div>
+        </div>
+
+        {% if nth == 1 %}
+        <div class="t-hackcss-media-shift media-right">
+          <img class="t-hackcss-media-image"
+               src="{{ post.image_preview }}" alt="{{ post.title }}"
+               title="{{ post.title }}" />
+        </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+
+
   <section name='projects'>
   	<h1> Projects overview </h1>
   		Find more projects <a href="{{site.baseurl}}/projects">here</a>!<br><br>
@@ -92,10 +140,10 @@ layout: default
 
   <section>
   	<h1> Artworks overview </h1>
-  	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.<br>
+  	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.<br><br>
 
   	{% for painting in site.drawings limit:3 %}
-  	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="30%"></img></a>
+  	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="auto" height='180px'></img></a>
   	{% endfor %}
   </section>
 

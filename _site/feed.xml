@@ -6,56 +6,50 @@
 </description>
     <link>https://picorana.github.io</link>
     <atom:link href="https://picorana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Mar 2017 01:01:45 +0100</pubDate>
-    <lastBuildDate>Sat, 11 Mar 2017 01:01:45 +0100</lastBuildDate>
+    <pubDate>Mon, 15 May 2017 23:41:03 +0200</pubDate>
+    <lastBuildDate>Mon, 15 May 2017 23:41:03 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Testing bash applications</title>
-        <description>
+        <title>Getting into Google Summer of Code and/or Outreachy</title>
+        <description>&lt;p&gt;So, this year I have been selected for both Google Summer of Code and Outreachy.&lt;/p&gt;
+
+&lt;p&gt;Since these are both programs that are very desirable on a Computer Science curriculum, and also very important in a student’s growth, I wanted to publicly share my experience with both programs to encourage anybody who is reading this blog post (if they have the requirements) to apply, and to give an example of an accepted proposal.&lt;/p&gt;
+
+&lt;p&gt;Since there is a huge number of guides on how to get accepted and how the application period and the internship period work, this post will be more about my personal experience and what challenges I had to overcome.&lt;/p&gt;
+
+&lt;p&gt;Even if I was accepted into both programs, I had to choose only one of the two. I chose Google Summer of Code, and in the next posts I will explain more in detail why.&lt;/p&gt;
+
+&lt;p&gt;This first post will only be a brief overview of what the two programs are, and I the next posts I will talk more in detail about my experience:&lt;/p&gt;
+
+&lt;h1 id=&quot;overview-of-the-programs&quot;&gt;Overview of the programs&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;&lt;/strong&gt; is a program aimed at university students, with the goal of bringing them closer to open source projects and organizations. The program is organized by Google, but within the same program you can chose among a lot of organizations (all of them will propose full open source projects) that you want to contribute to. There are about 200 organizations, each proposing several projects and accepting applicants proposals. , and within each one you can choose between different projects that they propose to the applicants. If you are accepted into the program, you will contribute to the selected project in a 3 month internship, 40 hours a week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.gnome.org/outreachy/&quot;&gt;Outreachy&lt;/a&gt;&lt;/strong&gt;, formerly Outreach Program for Women (OPW), is very similar to GSoC, with the main difference that is aimed at minorities, so it is mainly directed towards women and people whose minority is underrepresented in technology. The other difference is that it is held twice a year, while GSoC is only held once.&lt;/p&gt;
+
+&lt;p&gt;Google Summer of Code will get its participants from a bigger pool, and therefore, from what I have seen, is more competitive. But the number of accepted interns is also hugely different: while GSoC will accept about 1300 participants, Outreachy accepts about 40. This is also because the number of people who applies to Outreachy is much less.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-should-youi-participate&quot;&gt;Why should you(I) participate?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;You’ll be working for three months in an organization you like a lot&lt;/li&gt;
+  &lt;li&gt;You will have the opportunity to participate in a big open source project&lt;/li&gt;
+  &lt;li&gt;You will have a dedicated mentor to follow you and your work directly&lt;/li&gt;
+  &lt;li&gt;You will learn a lot!&lt;/li&gt;
+  &lt;li&gt;It will look nice on your curriculum&lt;/li&gt;
+  &lt;li&gt;And if all this isn’t enough, you’ll be paid very nicely.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, that’s all for now. Thanks for reading (:&lt;/p&gt;
 </description>
-        <pubDate>Wed, 15 Jan 2014 01:18:23 +0100</pubDate>
-        <link>https://picorana.github.io/bash/2014/01/15/foreign-link.html</link>
-        <guid isPermaLink="true">https://picorana.github.io/bash/2014/01/15/foreign-link.html</guid>
+        <pubDate>Tue, 09 May 2017 00:00:00 +0200</pubDate>
+        <link>https://picorana.github.io/google_summer_of_code,/outreachy/2017/05/09/getintogsoc.html</link>
+        <guid isPermaLink="true">https://picorana.github.io/google_summer_of_code,/outreachy/2017/05/09/getintogsoc.html</guid>
         
         
-        <category>bash</category>
+        <category>google_summer_of_code,</category>
         
-      </item>
-    
-      <item>
-        <title>Parsing XML with Ruby</title>
-        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacus est, sollicitudin sit amet molestie et, sodales vel ex. Vivamus lobortis blandit nibh, eu cursus justo ultrices ultricies. Nunc vitae ipsum imperdiet, mattis elit nec, sollicitudin nulla. Phasellus magna tortor, accumsan sit amet sapien eu, rhoncus consectetur est. Nunc pellentesque quam odio, eu cursus ex porttitor at. Sed ut neque dolor. Morbi ut rhoncus lectus. Ut luctus, enim ac interdum tempor, eros erat feugiat ante, sit amet feugiat magna quam non dolor. Pellentesque fermentum quam in justo mollis facilisis. Integer et tortor urna. Proin aliquam purus auctor sagittis mollis. Proin a sollicitudin turpis. In rhoncus eget massa id feugiat. Duis rutrum ligula eget erat feugiat, nec placerat ante facilisis. Suspendisse iaculis neque eu elementum mollis. Ut tempus libero sed congue iaculis.&lt;/p&gt;
-
-&lt;p&gt;Nullam molestie at risus vel aliquam. Morbi ornare cursus facilisis. Praesent tristique lobortis mi in ornare. Donec placerat arcu at ultricies ultricies. Proin ut iaculis erat. Nulla nec erat rutrum, blandit nunc volutpat, faucibus justo. Nam vel consectetur nunc.&lt;/p&gt;
-
-&lt;p&gt;Aliquam luctus eros et ligula auctor dictum. Donec sagittis dictum libero bibendum placerat. Duis non cursus sapien, ut bibendum urna. Donec ultricies nulla sit amet viverra congue. Proin pretium, mauris id euismod sagittis, nisi metus volutpat nibh, et imperdiet felis justo eget dui. Nunc facilisis ac urna id vehicula. Sed tempor turpis a consequat eleifend. Sed eleifend auctor est, id euismod massa volutpat sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam rhoncus purus nec purus interdum, id mattis lectus facilisis. Cras hendrerit maximus rutrum.&lt;/p&gt;
-
-&lt;p&gt;Nulla nec libero lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at quam nisl. Etiam ante enim, semper eget risus fringilla, mollis scelerisque nisi. Maecenas sed arcu imperdiet, blandit odio quis, finibus lacus. Curabitur et nunc enim. Aliquam sed mi efficitur, venenatis tellus id, suscipit turpis. In venenatis libero lacus, pretium aliquet quam imperdiet ac. In porttitor, urna ut rhoncus aliquet, mauris tellus rutrum enim, id aliquam ligula felis ac dui. Nullam diam ante, luctus at erat a, pretium fringilla lectus. Cras nec enim diam. Praesent commodo mi non risus viverra bibendum. Pellentesque eu tristique magna. Vestibulum id est erat. Nunc in blandit velit, ut suscipit sem.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse quis ante sed metus tristique tristique. Curabitur blandit diam at facilisis efficitur. Curabitur malesuada semper diam, nec fermentum metus tincidunt et. Nulla nec orci pretium turpis sodales efficitur suscipit euismod ligula. Sed iaculis sed nisi pulvinar efficitur. Curabitur at faucibus lectus. Etiam non cursus arcu. Phasellus urna eros, elementum vitae sodales quis, mollis a metus. Donec ultrices elementum turpis, eu aliquam leo maximus eu.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 15 Jan 2014 01:18:23 +0100</pubDate>
-        <link>https://picorana.github.io/ruby/2014/01/15/xml.html</link>
-        <guid isPermaLink="true">https://picorana.github.io/ruby/2014/01/15/xml.html</guid>
-        
-        
-        <category>ruby</category>
-        
-      </item>
-    
-      <item>
-        <title>Creating Python wrapper around C++ API</title>
-        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacus est, sollicitudin sit amet molestie et, sodales vel ex. Vivamus lobortis blandit nibh, eu cursus justo ultrices ultricies. Nunc vitae ipsum imperdiet, mattis elit nec, sollicitudin nulla. Phasellus magna tortor, accumsan sit amet sapien eu, rhoncus consectetur est. Nunc pellentesque quam odio, eu cursus ex porttitor at. Sed ut neque dolor. Morbi ut rhoncus lectus. Ut luctus, enim ac interdum tempor, eros erat feugiat ante, sit amet feugiat magna quam non dolor. Pellentesque fermentum quam in justo mollis facilisis. Integer et tortor urna. Proin aliquam purus auctor sagittis mollis. Proin a sollicitudin turpis. In rhoncus eget massa id feugiat. Duis rutrum ligula eget erat feugiat, nec placerat ante facilisis. Suspendisse iaculis neque eu elementum mollis. Ut tempus libero sed congue iaculis.&lt;/p&gt;
-
-&lt;p&gt;Nullam molestie at risus vel aliquam. Morbi ornare cursus facilisis. Praesent tristique lobortis mi in ornare. Donec placerat arcu at ultricies ultricies. Proin ut iaculis erat. Nulla nec erat rutrum, blandit nunc volutpat, faucibus justo. Nam vel consectetur nunc.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 23 Dec 2013 01:18:23 +0100</pubDate>
-        <link>https://picorana.github.io/ruby/2013/12/23/helloworld.html</link>
-        <guid isPermaLink="true">https://picorana.github.io/ruby/2013/12/23/helloworld.html</guid>
-        
-        
-        <category>ruby</category>
+        <category>outreachy</category>
         
       </item>
     
