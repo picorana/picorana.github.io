@@ -26,7 +26,7 @@ Overview of the programs
 
 Google Summer of Code will get its participants from a bigger pool, and therefore, from what I have seen, is more competitive. But the number of accepted interns is also hugely different: while GSoC will accept about 1300 participants, Outreachy accepts about 40. This is also because the number of people who applies to Outreachy is much less.
 
-Why should you(I) participate?
+Why should you participate?
 =========
 - You'll be working for three months in an organization you like a lot 
 - You will have the opportunity to participate in a big open source project
