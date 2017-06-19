@@ -6,9 +6,42 @@
 </description>
     <link>https://picorana.github.io</link>
     <atom:link href="https://picorana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 May 2017 23:41:03 +0200</pubDate>
-    <lastBuildDate>Mon, 15 May 2017 23:41:03 +0200</lastBuildDate>
+    <pubDate>Mon, 19 Jun 2017 23:50:47 +0200</pubDate>
+    <lastBuildDate>Mon, 19 Jun 2017 23:50:47 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Google Summer of Code with Processing update!</title>
+        <description>&lt;p&gt;So, three weeks have passed from the beginning of Google Summer of Code, and since we are starting to have some significative things to show, it’s time to talk about how it’s going (:&lt;/p&gt;
+
+&lt;p&gt;First of all: the goal of the three months period is to produce a Virtual Reality experience to show and test the new VR mode for processing-android.&lt;/p&gt;
+
+&lt;p&gt;As of now, I produced three attempts - I have to choose one among these, but I still haven’t decide which one of them is the one I prefer, and my mentors are giving me plenty of creative freedom, which I really appreciate. The idea is to make something that can move according to music.&lt;/p&gt;
+
+&lt;p&gt;First one: &lt;strong&gt;Geometry&lt;/strong&gt;. This attempt was about making mesmerizing geometries. All that you see in the screenshot is rotating, producing a trippy effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;80%&quot; src=&quot;/images/geometry_screenshot.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Second one: &lt;strong&gt;Procedural Terrain&lt;/strong&gt;. This terrain is generated using two-dimensional perlin noise to determine the height in each point, and new parts of terrain are generated as you move forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;80%&quot; src=&quot;/images/terrain_screenshot.png&quot; /&gt;
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;40%&quot; src=&quot;/images/terrain.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Third one: &lt;strong&gt;Procedural City&lt;/strong&gt;. The concept behind this one is pretty similar to the previous one, but there’s a city being generated and not a terrain. It’s also a little more visually dense than the previous one, as I had in mind a japanese commercial street while doing this one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;80%&quot; src=&quot;/images/city_screenshot.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Link to the repo on github for the curious: &lt;a href=&quot;https://github.com/picorana/VR_Demo_GSoC17&quot;&gt;VR_Demo_GSoC17 on Github&lt;/a&gt;. 
+Mind you that if you ever want to try this, you will need to have the latest beta release of processing-android (&lt;a href=&quot;https://github.com/processing/processing-android/releases/tag/android-262&quot;&gt;you can find it here&lt;/a&gt; - not the normal android mode that you get when downloading it directly from the Processing IDE!)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Jun 2017 00:00:00 +0200</pubDate>
+        <link>https://picorana.github.io/google_summer_of_code/2017/06/19/gsoc2.html</link>
+        <guid isPermaLink="true">https://picorana.github.io/google_summer_of_code/2017/06/19/gsoc2.html</guid>
+        
+        
+        <category>google_summer_of_code</category>
+        
+      </item>
     
       <item>
         <title>Getting into Google Summer of Code and/or Outreachy</title>
@@ -30,7 +63,7 @@
 
 &lt;p&gt;Google Summer of Code will get its participants from a bigger pool, and therefore, from what I have seen, is more competitive. But the number of accepted interns is also hugely different: while GSoC will accept about 1300 participants, Outreachy accepts about 40. This is also because the number of people who applies to Outreachy is much less.&lt;/p&gt;
 
-&lt;h1 id=&quot;why-should-youi-participate&quot;&gt;Why should you(I) participate?&lt;/h1&gt;
+&lt;h1 id=&quot;why-should-you-participate&quot;&gt;Why should you participate?&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;You’ll be working for three months in an organization you like a lot&lt;/li&gt;
   &lt;li&gt;You will have the opportunity to participate in a big open source project&lt;/li&gt;
