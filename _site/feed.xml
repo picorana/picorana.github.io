@@ -6,9 +6,45 @@
 </description>
     <link>https://picorana.github.io</link>
     <atom:link href="https://picorana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jun 2017 23:50:47 +0200</pubDate>
-    <lastBuildDate>Mon, 19 Jun 2017 23:50:47 +0200</lastBuildDate>
+    <pubDate>Mon, 03 Jul 2017 23:48:17 +0200</pubDate>
+    <lastBuildDate>Mon, 03 Jul 2017 23:48:17 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>First evaluation passed!</title>
+        <description>&lt;p&gt;I passed the first evaluation for GSoC!&lt;/p&gt;
+
+&lt;p&gt;As I was talking about in the previous post, my project for Google Summer Of Code is a VR application with Processing VR.
+The application was going to be a demo, so me and my mentors decided together what the demo was going to be.&lt;/p&gt;
+
+&lt;p&gt;In the first period, we worked and decided how the sketch was going to be.
+We decided that it would be a desert, with dunes.&lt;/p&gt;
+
+&lt;p&gt;I am also adding some visual details, like procedural cactus-es (cacti?), and phone towers. 
+I’m trying to do everything procedural, so everything can be generated according to different inputs. Also, I’m not very good at 3D modeling (:&lt;/p&gt;
+
+&lt;p&gt;Take a look at how the terrain is evolving, here:&lt;/p&gt;
+
+&lt;p&gt;The first version was just generic, the first thing that came out when I first tried doing a procedurally generated terrain.
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;70%&quot; src=&quot;/images/terrain.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second version was a little more defined: the terrain is now clearly a desert, and it has a road! 
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;70%&quot; src=&quot;/images/terrain2.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Third version, we now have a sky and plants. 
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;90%&quot; src=&quot;/images/terrain3.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, link to the repo! &lt;a href=&quot;https://github.com/picorana/VR_Demo_GSoC17&quot;&gt;VR demo on github&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 03 Jul 2017 00:00:00 +0200</pubDate>
+        <link>https://picorana.github.io/google_summer_of_code/2017/07/03/gsoc3.html</link>
+        <guid isPermaLink="true">https://picorana.github.io/google_summer_of_code/2017/07/03/gsoc3.html</guid>
+        
+        
+        <category>google_summer_of_code</category>
+        
+      </item>
     
       <item>
         <title>Google Summer of Code with Processing update!</title>
