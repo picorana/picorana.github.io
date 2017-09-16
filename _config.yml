@@ -186,6 +186,28 @@ projects:
     team: Me
     tags: python, reddit, javascript, d3.js, data_science, machine_learning, big_data, data_visualization
 
+  - name: Persistence of Vision Display
+    link: https://www.youtube.com/watch?v=EZD25CG7F38
+    description: We built a clock that displays a series of arcs representing the time by rotating very fast a single LED strip and giving the illusion that the clock is made by continuous arcs of light. <br> The LEDs are turned on and off with appropriate timing, so thanks to the principle of persistence of vision, the eye is under the impression that what it's seeing is not a strip of LEDs rotating, but a continuous beam. <br> This display was made for the 30th anniversary of Quasar Design University, Rome. <br><br>Click on the link to see a video of the display in action.
+    image: /activities_img/pov0.png
+    image1: /activities_img/pov1.png
+    image2: /activities_img/pov2.png
+    date: 2017-06-01
+    type: other
+    team: Me, Bruno Laurencich
+    tags: art, arduino, display
+
+  - name: VR Audioscape
+    link: https://github.com/picorana/VR_audioscape
+    description: Project made during Google Summer of Code 2017 for The Processing Foundation. <br><br> VR Audioscape is a VR application made with Processing. It lets you travel through a procedural landscape generated according to music. <br>Play any music from any app on your phone, then run the app. It will automatically use as input any sound coming as output from the phone.
+    image: /activities_img/vraudioscape0.gif
+    image1: /activities_img/vraudioscape1.png
+    image2: /activities_img/vraudioscape2.png
+    date: 2017-08-01
+    type: app
+    team: Me
+    tags: virtual_reality, processing, android, music_analysis
+
 collections:
   - drawings
 
