@@ -34,6 +34,12 @@ navigation:
     url: /projects
   - text: Art
     url: /art
+  - text: Awards, Talks and Exhibitions
+    url: /awards
+  - text: Work Experience
+    url: /work
+  - text: Education and Skills
+    url: /education
   - text: Blog
     url: /blog
 
