@@ -34,6 +34,15 @@ permalink: art
 </section>
 <br>
 <section>
+  <h2>Character design: Ansibull</h2>
+  {% for painting in site.drawings %}
+    {% if painting.technique == 'character_design_ansible' %}
+        <a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="watercolor"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="auto" height='200px'></img></a>
+    {% endif %}
+  {% endfor %}
+</section>
+<br>
+<section>
   <h2>3d</h2>
   {% for painting in site.drawings %}
     {% if painting.technique == '3d' %}
