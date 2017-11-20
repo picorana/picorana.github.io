@@ -5,6 +5,8 @@ permalink: portfolio
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+
 
 <style>
 	* { box-sizing: border-box; }
@@ -64,75 +66,315 @@ permalink: portfolio
 	.grid-item--height35 { height: 300px; }
 	.grid-item--height4 { height: 360px; }
 
+	.portfolio-btn {
+		border: 2px solid #333; 
+		border-color: #ff2e88; 
+		border-radius: 10px; 
+		background-color: #222; 
+		padding: 15px;
+	}
+
+	.portfolio-btn:hover {
+		background-color: #444;
+	}
+
 </style>
 
 <section>
 	<h1>Portfolio</h1>
-	<div class="grid js-masonry">
+	<div class="grid js-masonry" style="height: auto">
 	  <div class="grid-sizer"></div>
 
-	  <div class="grid-item grid-item--height35 grid-item--width5" style="overflow: hidden;">
-	  		<div style="display: inline-block;">
-		  		<img style="float: left; width:60%" src="/activities_img/vraudioscape0.gif"/>
-		  	
-			  	<div style="float:right; width:40%; padding: 15px; text-align: center">
-
-			  		<a href="https://github.com/picorana/VR_audioscape"><b>VR Audioscape</b></a><br><br>
-
-			  		<span style="font-size: 10px; color:#FFF">
-			  			Project made during Google Summer of Code 2017 for The Processing Foundation. <br><br> VR Audioscape is a VR application made with Processing that lets the user travel through a procedural landscape generated according to music. <br>Play any music from any app on your phone, then run the app. It will automatically use as input any sound coming as output from the phone. <br>
-			  		</span>
-
-			  		<a href='https://play.google.com/store/apps/details?id=com.picorana.vraudioscape&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width=150 src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-			  	</div>
+	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
+	  		<div style="text-align: center">
+		  		<img style="width: 100%" src="/activities_img/vraudioscape0.gif"/>
 		  	</div>
 	  </div>
 
-	  <div class="grid-item grid-item--width2 grid-item--height4">
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding:15px">
+
+	  		<a href="https://github.com/picorana/VR_audioscape"><b>VR Audioscape</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+	  			Project made during Google Summer of Code 2017 for The Processing Foundation. <br><br> VR Audioscape is a VR application made with Processing that lets the user travel through a procedural landscape generated according to music. <br>Play any music from any app on your phone, then run the app. It will automatically use as input any sound coming as output from the phone. <br>
+	  		</span>
+
+	  		<a href='https://play.google.com/store/apps/details?id=com.picorana.vraudioscape&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width=150 src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
+	  	<div style="text-align: center; padding: 15px">
+	  		<a href="https://github.com/picorana/VR_audioscape"><b>VR Audioscape on github</b></a><br><br>
+	  		<div class="github-card" data-github="picorana/VR_audioscape" data-width="400" data-height="" data-theme="default"></div>
+	  	</div>
+	  </div>
+
+	  
+
+
+
+	  <div class="grid-item grid-item--width2" style="height:auto">
 	  	<img width=100% src="/activities_img/vraudioscape1.png"/>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
 	  	<img width=100% src="/activities_img/vraudioscape2.png"/>
 	  </div>
 
-	  <div class="grid-item grid-item--width3 grid-item--height3">
-	  	<img height=100% src="/activities_img/pov1.png">
-	  </div>
-
-	  <div class="grid-item grid-item--width3 grid-item--height3">
-	  	<img height=100% src="/activities_img/pov2.png">
-	  </div>
-
-	  <div class="grid-item grid-item--width3 grid-item--height3" style="vertical-align: center">
-	  	<iframe width=100% height=100% src="https://www.youtube.com/embed/EZD25CG7F38" frameborder="0" allowfullscreen></iframe>
-	  </div>
-
-	  <div class="grid-item grid-item--width2 grid-item--height3">
-	  	<div style="text-align: center; padding: 15px">
-
-	  		<a href="https://github.com/picorana/VR_audioscape"><b>Persistence of Vision Display</b></a><br><br>
-
-		  	<span style="font-size: 10px; color:#FFF">
-		  		We built a clock that displays a series of arcs representing the time by rotating very fast a single LED strip and giving the illusion that the clock is made by continuous arcs of light. <br> The LEDs are turned on and off with appropriate timing, so thanks to the principle of persistence of vision, the eye is under the impression that what it's seeing is not a strip of LEDs rotating, but a continuous beam. <br> This display was made for the 30th anniversary of Quasar Design University, Rome. <br><br>
-		  	</span>
+	  <div class="grid-item" style="height: auto">
+	  	<div style="text-align: center; padding: 15px; color: #FFF">
+	  		Articles on Medium <br>
+	  		<a href="http://android.processing.org/gallery/index.html"><b>[1]</b></a> 
+	  		<a href="http://android.processing.org/gallery/index.html"><b>[2]</b></a>
 	  	</div>
 	  </div>
 
-	  <div class="grid-item grid-item--height2 grid-item--width2">
+	  <div class="grid-item" style="height: auto">
 	  	<div style="text-align: center; padding: 15px">
+	  		<a href="http://android.processing.org/gallery/index.html"><b>VR audioscape on processing.org</b></a>
+	  	</div>
+	  </div>
+
+	</div>
+
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width3" style="height: auto">
+	  	<img width=100% src="/activities_img/pov1.png">
+	  </div>
+
+	  <div class="grid-item grid-item--width3" style="height: auto">
+	  	<img width=100% src="/activities_img/povgif2.gif">
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<img width=100% src="/activities_img/povgif1.gif">
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<a href=""><b>Persistence of Vision Display</b></a><br><br>
+
+		  	<span style="font-size: 12px; color:#FFF">
+		  		We built a clock that displays a series of arcs representing the time by rotating very fast a single LED strip and giving the illusion that the clock is made by continuous arcs of light. <br><br> The LEDs are turned on and off with appropriate timing, so thanks to the principle of persistence of vision, the eye is under the impression that what it's seeing is not a strip of LEDs rotating, but a continuous beam. <br><br> This display was made for the 30th anniversary of Quasar Design University, Rome. <br><br>
+		  	</span>
+
+		  	<button onclick="location.href='https://www.youtube.com/embed/EZD25CG7F38';" class="portfolio-btn">
+		  		<a href="https://www.youtube.com/embed/EZD25CG7F38"><b>See the video</b></a>
+		  	</button>
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+		  	<span style="font-size: 12px; color:#FFF">
+		  		The clock represents the passing of time. Each arc of the clock represents a unit of time. In the course of a year, the clock slowly becomes empty, arc by arc, shutting down completely at the end of the year.
+		  	</span>
+
+	  	</div>
+	  </div>
+
+	  <div class="grid-item" style="height: auto">
+	  	<img width=100% height="100%" src="/activities_img/pov0.png">
+	  </div>
+
+	</div>
+	
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width2" style="height:auto">
+	  	<div style="text-align: center; padding: 15px">
+	  		<a href="http://picorana.github.io/reddit_analytics/graph1.html"><b>Map of Reddit</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		The Map of Reddit is an interactive graph intended for the discovery of new content of Reddit. It is the result of hierarchical clustering run using user contributions in different subreddit as a similarity measure.
+		  	</span>
+
+		  	<br><br>
+
+		  	<button onclick="location.href='http://picorana.github.io/reddit_analytics/graph1.html';" class="portfolio-btn">
+		  		<a href="http://picorana.github.io/reddit_analytics/graph1.html"><b>Try it!</b></a>
+		  	</button>
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		I also had a public talk at Data Driven Innovation 2017 about the map of reddit and more related studies I did:
+		  	</span><br><br>
+
 	  		<a href="http://picorana.github.io/reddit_analytics/graph1.html"><b>Clustering Reddit</b></a><br><br>
 
-	  		<span style="font-size: 10px; color:#FFF">
-		  		In this talk, held at Data Driven Innovation 2017, I explore how to use data obtained from Reddit to better understand how the community works by applying clustering algorithms and some simple text mining techniques to the comments and submissions.
+	  		<span style="font-size: 12px; color:#FFF">
+
+	  			Abstract:<br>
+
+		  		<i>In this talk, I explore how to use data obtained from Reddit to better understand how the community works by applying clustering algorithms and some simple text mining techniques to the comments and submissions.</i>
 		  	</span>
 	  	</div>
 	  </div>
 
-	  <div class="grid-item grid-item--height2 grid-item--width3" style="text-align: center">
-	  	<img height=100% src="/activities_img/reddit0.png">
+	  <div class="grid-item grid-item--width3" style="text-align: center; height: auto">
+	  	<img width=200% style="margin:-20%" src="/activities_img/reddit0.png">
 	  </div>
 
-	  <div class="grid-item grid-item--height2 grid-item--width2" style="text-align: center">
-	  	<img height=100% src="/activities_img/reddit1.jpg">
+	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
+	  	<div style="text-align: center; padding: 15px">
+	  		<a href="https://github.com/picorana/reddit_analytics"><b>Map of Reddit on github</b></a><br><br>
+	  		<div class="github-card" data-github="picorana/reddit_analytics" data-width="400" data-height="" data-theme="default"></div>
+	  	</div>
 	  </div>
+
+	  <div class="grid-item grid-item--width1" style="text-align: center; height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		More: graph centrality measures on Reddit
+		  	</span><br><br>
+
+		  	<button onclick="location.href='https://nbviewer.jupyter.org/github/picorana/Graph_Centrality_Measures/blob/master/notebook.ipynb';" class="portfolio-btn">
+		  		<a href="https://nbviewer.jupyter.org/github/picorana/Graph_Centrality_Measures/blob/master/notebook.ipynb"><b>Notebook!</b></a>
+		  	</button>
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="text-align: center; height: auto">
+	  	<img width=100% src="/activities_img/reddit2.png">
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="text-align: center; height: auto">
+	  	<img width=100% src="/activities_img/reddit1.jpg">
+	  </div>
+
+	</div>
+	
+	<!-- ### YOU TURING COMPLETE ME ### -->
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<a href="http://globalgamejam.org/2015/games/poopfest"><b>You Turing-Complete Me</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		You Turing-Complete me is a talk I did at Codemotion 2016, Campus Party 2017 and Google DevFest Bari 2017 about Turing Completeness in videogames.
+		  	</span><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+	  			Abstract: <br>
+		  		<i>Turing Completeness is a set of characteristics that makes any language able to be used to build a Turing machine, therefore to be used to write any program or define another programming language. Such characteristics are so simple that they can be found in unexpected places like videogames. "You Turing Complete Me" is a talk that explores weird Turing Complete places, including Pokémon and Minecraft.</i>
+		  	</span><br><br>
+
+		  	<button onclick="location.href='https://nbviewer.jupyter.org/github/picorana/Graph_Centrality_Measures/blob/master/notebook.ipynb';" class="portfolio-btn">
+		  		<a href="https://nbviewer.jupyter.org/github/picorana/Graph_Centrality_Measures/blob/master/notebook.ipynb"><b>Slides!</b></a>
+		  	</button>
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width1" style="height:auto">
+	  	<img width=100% src="/activities_img/youturingcompleteme0.jpg"/>
+	  </div>
+
+	  <div class="grid-item grid-item--width1" style="height:auto">
+	  	<img width=100% src="/activities_img/youturingcompleteme1.jpg"/>
+	  </div>
+
+	</div>
+	
+	<!-- ### POOPFEST ### -->
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<a href="http://globalgamejam.org/2015/games/poopfest"><b>Poopfest</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		Poopfest is a small experimental game with watercolour graphics. 2-4 players fight each other as birds. 1st prize for graphics and 2nd prize for gameplay at Global Game Jam Rome 2015.
+		  	</span><br><br>
+
+		  	<button onclick="location.href='http://globalgamejam.org/2015/games/poopfest';" class="portfolio-btn">
+		  		<a href="http://globalgamejam.org/2015/games/poopfest"><b>Download it!</b></a>
+		  	</button>
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height:auto">
+	  	<img width=100% src="/activities_img/poopfest0.png"/>
+	  </div>
+
+	  <div class="grid-item grid-item--width1" style="height:auto">
+	  	<img width=100% src="/activities_img/poopfest1.png"/>
+	  </div>
+
+	</div>
+	
+	<!-- ### LE CICALE ### -->
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width1" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<a href=""><b>Le Cicale</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		Le Cicale was a movie documentary about the old people of Rome that included watercolour animated sections. <br><br>Unfortunately, the project was never finished, but I like to show off my watercolors (:
+		  	</span><br><br>
+
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width4" style="text-align: center; height: auto">
+	  	<img width=100% src="/drawings/signore_med.jpg">
+	  </div>
+
+	  <div class="grid-item grid-item--width4" style="text-align: center; height: auto">
+	  	<img width=100% src="/drawings/nonricordo.jpg">
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="text-align: center; height: auto">
+	  	<img width=100% src="/drawings/giuliana.jpg">
+	  </div>
+
+	  
+
+	</div>
+	
+	<!-- ### ELECTRIC TREE ### -->
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<a href="http://globalgamejam.org/2015/games/poopfest"><b>Electric Tree</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		Electric tree is creative data visualization program, winner of the Cleanweb contest 2014.
+		  	</span><br><br>
+
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height:auto">
+	  	<img width=100% src="/activities_img/electrictree0.png"/>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height:auto">
+	  	<img width=100% src="/activities_img/electrictree1.png"/>
+	  </div>
+
 
 	  <div class="grid-item grid-item--height2" style="text-align: center">
 	  	<img height=100% src="/drawings/1.jpg">
@@ -158,13 +400,9 @@ permalink: portfolio
 	  	<img style="margin-top: -20%" width=100% src="/drawings/statua.jpg">
 	  </div>
 
-	  <div class="grid-item grid-item--height4 grid-item--width3" style="text-align: center">
-	  	<img height=100% src="/drawings/signore_med.jpg">
-	  </div>
+	  
 
-	  <div class="grid-item grid-item--width3 grid-item--height4">
-	  	<img width=100% src="/activities_img/poopfest0.png"/>
-	  </div>
+	  
 
 
 	  <div class="grid-item grid-item--width2 grid-item--height3"></div>
@@ -185,11 +423,21 @@ permalink: portfolio
 	</div>
 </section>
 
+
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
 <script>
 $(document).ready(function () {
-	var $grid = $('.grid').masonry({
-	  itemSelector: '.grid-item',
 
-	});
+
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    itemSelector: '.grid-item',
+	  columnWidth: '.grid-sizer',
+	  percentWidth: true
+  });
+});
+
 });
 </script>
