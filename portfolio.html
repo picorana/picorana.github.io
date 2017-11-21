@@ -7,6 +7,8 @@ permalink: portfolio
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 
+<script src="https://unpkg.com/progressively/dist/progressively.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/progressively/dist/progressively.min.css">
 
 <style>
 	* { box-sizing: border-box; }
@@ -86,9 +88,9 @@ permalink: portfolio
 	  <div class="grid-sizer"></div>
 
 	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
-	  		<div style="text-align: center">
-		  		<img style="width: 100%" src="/activities_img/vraudioscape0.gif"/>
-		  	</div>
+	  	<figure class="progressive" style="margin: 0px">
+	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/vraudioscape0.gif" src="/activities_img/vraudioscape0_small.gif">
+	  	</figure>
 	  </div>
 
 	  <div class="grid-item grid-item--width2" style="height: auto">
@@ -143,11 +145,15 @@ permalink: portfolio
 	  <div class="grid-sizer"></div>
 
 	  <div class="grid-item grid-item--width3" style="height: auto">
-	  	<img width=100% src="/activities_img/pov1.png">
+	  	<figure width=100% class="progressive" style="margin: 0px">
+	  		<img class="progressive__img progressive--not-loaded" data-progressive="/activities_img/pov1.png" src="/activities_img/pov1_small.png">
+	  	</figure>
 	  </div>
 
 	  <div class="grid-item grid-item--width3" style="height: auto">
-	  	<img width=100% src="/activities_img/povgif2.gif">
+	  	<figure class="progressive" style="margin: 0px">
+	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/povgif2.gif" src="/activities_img/povgif2_small.gif">
+	  	</figure>
 	  </div>
 
 	  <div class="grid-item grid-item--width2" style="height: auto">
@@ -256,6 +262,26 @@ permalink: portfolio
 
 	</div>
 	
+	<!-- ### RENDERING ### -->
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width2" style="text-align: center; height: auto">
+	  	<img width=100% src="/activities_img/ig1.jpg">
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<span style="font-size: 12px; color:#FFF">
+	  			I like computer graphics.
+		  	</span><br><br>
+
+	  	</div>
+	  </div>
+
+	</div>
+	
 	<!-- ### YOU TURING COMPLETE ME ### -->
 	<div class="grid js-masonry">
 	  <div class="grid-sizer"></div>
@@ -347,7 +373,45 @@ permalink: portfolio
 	  	<img width=100% src="/drawings/giuliana.jpg">
 	  </div>
 
-	  
+	</div>
+	
+	<!-- ### CLICKEN ### -->
+	<div class="grid js-masonry">
+	  <div class="grid-sizer"></div>
+
+	  <div class="grid-item grid-item--width2" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<a href="http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=26439"><b>Clicken!</b></a><br><br>
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		An incremental game about having a barn.
+		  	</span><br><br>
+
+		  	<button onclick="location.href='http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=26439';" class="portfolio-btn">
+		  		<a href="http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=26439"><b>Download it!</b></a>
+		  	</button>
+
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width1" style="height: auto">
+	  	<div style="text-align: center; padding: 15px">
+
+	  		<span style="font-size: 12px; color:#FFF">
+		  		Clicken got 6th prize in the overall category and 1st prize in the fun category in <b>Ludum Dare 28.</b>
+		  	</span><br><br>
+
+	  	</div>
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="text-align: center; height: auto">
+	  	<img width=100% src="/activities_img/clicken1.jpg">
+	  </div>
+
+	  <div class="grid-item grid-item--width2" style="text-align: center; height: auto">
+	  	<img width=100% src="/activities_img/clicken2.png">
+	  </div>
 
 	</div>
 	
@@ -400,26 +464,6 @@ permalink: portfolio
 	  	<img style="margin-top: -20%" width=100% src="/drawings/statua.jpg">
 	  </div>
 
-	  
-
-	  
-
-
-	  <div class="grid-item grid-item--width2 grid-item--height3"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item grid-item--height2"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-	  <div class="grid-item grid-item--width2"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item grid-item--height2"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item grid-item--height3"></div>
-	  <div class="grid-item grid-item--height2"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item"></div>
-	  <div class="grid-item grid-item--height2"></div>
 	</div>
 </section>
 
@@ -427,9 +471,18 @@ permalink: portfolio
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <script>
+
+progressively.init({
+  onLoad: function(elem) {
+    console.log(elem);
+  },
+  onLoadComplete: function() {
+    console.log('All images have finished loading!');
+  }
+});
+
 $(document).ready(function () {
-
-
+	
 var $grid = $('.grid').imagesLoaded( function() {
   // init Masonry after all images have loaded
   $grid.masonry({
@@ -440,4 +493,5 @@ var $grid = $('.grid').imagesLoaded( function() {
 });
 
 });
+
 </script>
