@@ -267,6 +267,12 @@
 	  	</div>
 	  </div>
 
+	  	  	 <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto;">
+	  	<div style="text-align: center; padding: 15px">
+	  		<div class="github-card" data-github="picorana/shapeshifting_timelines" data-width="400" data-height="" data-theme="default"></div>
+	  	</div>
+	  </div>
+
 	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/shapeshifting_timelines1.png" src="/activities_img/shapeshifting_timelines1_small.png">
@@ -279,14 +285,10 @@
 	  	</figure>
 	  </div>
 
-	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto;">
-	  	<div style="text-align: center; padding: 15px">
-	  		<a href="https://github.com/picorana/shapeshifting_timelines"><b>Shapeshifting timelines on github</b></a><br><br>
-	  		<div class="github-card" data-github="picorana/shapeshifting_timelines" data-width="400" data-height="" data-theme="default"></div>
-            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-	  	</div>
-	  </div>
-	</div>
+
+	 </div>
+
+
 
 	<!-- SPARQLING -->
 	<div class="grid js-masonry" style="height: auto">
@@ -343,12 +345,10 @@
 	  </div>
 
 	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
-	  	<div style="text-align: center; padding: 15px">
-	  		<a href="https://github.com/picorana/sparqling"><b>Sparqling on github</b></a><br><br>
+	  	<div style="text-align: center; padding: 15px; height: auto">
 	  		<div class="github-card" data-github="picorana/sparqling" data-width="400" data-height="" data-theme="default"></div>
-            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 	  	</div>
-	  </div>
+		</div>
 	</div>
 
 	<!-- ### VR AUDIOSCAPE ### -->
@@ -374,11 +374,9 @@
 	  	</div>
 	  </div>
 
-	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto; display:none">
+	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto;">
 	  	<div style="text-align: center; padding: 15px">
-	  		<a href="https://github.com/picorana/VR_audioscape"><b>VR Audioscape on github</b></a><br><br>
 	  		<div class="github-card" data-github="picorana/VR_audioscape" data-width="400" data-height="" data-theme="default"></div>
-            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 	  	</div>
 	  </div>
 
@@ -876,8 +874,10 @@ var $grid = $('.grid').imagesLoaded( function() {
   $grid.masonry({
     itemSelector: '.grid-item',
 	  columnWidth: '.grid-sizer',
-	  percentWidth: true
+	  percentWidth: true,
+	  isAnimated: false
   });
+
 });
 
 });
