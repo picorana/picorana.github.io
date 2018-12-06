@@ -6,8 +6,8 @@
 </description>
     <link>https://picorana.github.io</link>
     <atom:link href="https://picorana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Jun 2018 23:54:24 +0200</pubDate>
-    <lastBuildDate>Mon, 04 Jun 2018 23:54:24 +0200</lastBuildDate>
+    <pubDate>Thu, 06 Dec 2018 16:26:54 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Dec 2018 16:26:54 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -37,7 +37,7 @@ I’m trying to do everything procedural, so everything can be generated accordi
 &lt;p&gt;Here, link to the repo! &lt;a href=&quot;https://github.com/picorana/VR_Demo_GSoC17&quot;&gt;VR demo on github&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 03 Jul 2017 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 03 Jul 2017 00:00:00 -0400</pubDate>
         <link>https://picorana.github.io/google_summer_of_code/2017/07/03/gsoc3.html</link>
         <guid isPermaLink="true">https://picorana.github.io/google_summer_of_code/2017/07/03/gsoc3.html</guid>
         
@@ -70,7 +70,7 @@ I’m trying to do everything procedural, so everything can be generated accordi
 &lt;p&gt;Link to the repo on github for the curious: &lt;a href=&quot;https://github.com/picorana/VR_Demo_GSoC17&quot;&gt;VR_Demo_GSoC17 on Github&lt;/a&gt;. 
 Mind you that if you ever want to try this, you will need to have the latest beta release of processing-android (&lt;a href=&quot;https://github.com/processing/processing-android/releases/tag/android-262&quot;&gt;you can find it here&lt;/a&gt; - not the normal android mode that you get when downloading it directly from the Processing IDE!)&lt;/p&gt;
 </description>
-        <pubDate>Mon, 19 Jun 2017 00:00:00 +0200</pubDate>
+        <pubDate>Mon, 19 Jun 2017 00:00:00 -0400</pubDate>
         <link>https://picorana.github.io/google_summer_of_code/2017/06/19/gsoc2.html</link>
         <guid isPermaLink="true">https://picorana.github.io/google_summer_of_code/2017/06/19/gsoc2.html</guid>
         
@@ -111,7 +111,7 @@ Mind you that if you ever want to try this, you will need to have the latest bet
 
 &lt;p&gt;So, that’s all for now. Thanks for reading (:&lt;/p&gt;
 </description>
-        <pubDate>Tue, 09 May 2017 00:00:00 +0200</pubDate>
+        <pubDate>Tue, 09 May 2017 00:00:00 -0400</pubDate>
         <link>https://picorana.github.io/google_summer_of_code,/outreachy/2017/05/09/getintogsoc.html</link>
         <guid isPermaLink="true">https://picorana.github.io/google_summer_of_code,/outreachy/2017/05/09/getintogsoc.html</guid>
         
