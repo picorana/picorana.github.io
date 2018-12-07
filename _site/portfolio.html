@@ -50,6 +50,10 @@
     display: none!important;
     visibility: hidden!important;
   }
+
+  .container{
+    max-width: 120em;
+  }
   </style>
 
   <!-- 'jekyll-seo' plugin -->
@@ -175,11 +179,6 @@
 
 	body { font-family: sans-serif; }
 
-	/* --- IMPORTANT: MOVE THIS TO MAIN BODY */
-	.container{
-		max-width: 90em;
-	}
-
 	.t-hackcss-navigation{
 		padding-right: 20px;
 	}
@@ -245,13 +244,91 @@
 <section>
 	<h1>Portfolio</h1>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+
+<script src="https://unpkg.com/progressively/dist/progressively.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/progressively/dist/progressively.min.css">
+
+<style>
+	* { box-sizing: border-box; }
+
+	body { font-family: sans-serif; }
+
+	.t-hackcss-navigation{
+		padding-right: 20px;
+	}
+	/* --- IMPORTANT: MOVE THIS TO MAIN BODY */
+
+	/* ---- grid ---- */
+
+	.grid {
+	  background: #FFF;
+
+	}
+
+	/* clearfix */
+	.grid:after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+
+	/* ---- grid-item ---- */
+
+	.grid-sizer,
+	.grid-item {
+	  width: 20%;
+	}
+
+	.grid-item {
+	  height: 120px;
+	  float: left;
+	  background: #222;
+	  border: 2px solid #333;
+	  border-color: #FFF;
+	  border-radius: 10px;
+	  overflow: hidden;
+	}
+
+	.grid-item--width2 { width:  40%; }
+	.grid-item--width3 { width:  60%; }
+	.grid-item--width4 { width:  80%; }
+	.grid-item--width5 { width:  100%; }
+
+	.grid-item--height15 { height: 150px; }
+	.grid-item--height2 { height: 200px; }
+	.grid-item--height25 { height: 230px; }
+	.grid-item--height3 { height: 260px; }
+	.grid-item--height35 { height: 300px; }
+	.grid-item--height4 { height: 360px; }
+
+	.portfolio-btn {
+		border: 2px solid #333; 
+		border-color: #ff2e88; 
+		border-radius: 10px; 
+		background-color: #222; 
+		padding: 15px;
+	}
+
+	.portfolio-btn:hover {
+		background-color: #444;
+	}
+
+</style>
+
 	<!-- SHAPESHIFTING TIMELINES -->
 	<div class="grid js-masonry" style="height: auto">
 	  <div class="grid-sizer"></div>
 
 	  <div class="grid-item grid-item--width5" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
+	  	<a href='/activities_img/shapeshifting_timelines0.gif' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/shapeshifting_timelines0.gif" src="/activities_img/shapeshifting_timelines0_small.gif">
+	  	</a>
 	  	</figure>
 	  </div>
 
@@ -267,7 +344,7 @@
 	  	</div>
 	  </div>
 
-	  	  	 <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto;">
+	  	<div class="grid-item grid-item--width3" style="overflow: hidden; height: auto;">
 	  	<div style="text-align: center; padding: 15px">
 	  		<div class="github-card" data-github="picorana/shapeshifting_timelines" data-width="400" data-height="" data-theme="default"></div>
 	  	</div>
@@ -275,19 +352,22 @@
 
 	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
+	  	<a href='/activities_img/shapeshifting_timelines1.png' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/shapeshifting_timelines1.png" src="/activities_img/shapeshifting_timelines1_small.png">
+	  	</a>
 	  	</figure>
 	  </div>
 
 	  <div class="grid-item grid-item--width2" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
+	  		<a href='/activities_img/shapeshifting_timelines2.png' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/shapeshifting_timelines2.png" src="/activities_img/shapeshifting_timelines2_small.png">
+	  		</a>
 	  	</figure>
 	  </div>
 
 
 	 </div>
-
 
 
 	<!-- SPARQLING -->
@@ -296,7 +376,9 @@
 
 	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
+	  		<a href='/activities_img/sparqling1.gif' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/sparqling1.gif" src="/activities_img/sparqling1_small.gif">
+	  	</a>
 	  	</figure>
 	  </div>
 
@@ -328,19 +410,25 @@
 
 	  <div class="grid-item grid-item--width3" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
+	  		<a href='/activities_img/sparqling2.gif' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/sparqling2.gif" src="/activities_img/sparqling2_small.gif">
+	  	</a>
 	  	</figure>
 	  </div>
 
 	<div class="grid-item grid-item--width2" style="overflow: hidden; height: auto">
 	  	<figure class="progressive" style="margin: 0px">
+	  		<a href='/activities_img/sparqling3.png' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/sparqling3.png" src="/activities_img/sparqling3_small.png">
-	  	</figure>
+	  		</a>
+	  		</figure>
 	  </div>
 
 	  <div class="grid-item grid-item--width2" style="overflow: hidden; height: auto; display: none">
 	  	<figure class="progressive" style="margin: 0px">
+	  	<a href='/activities_img/sparqling0.png' data-lightbox="image-2">
 	  	<img width=100% class="progressive__img progressive--not-loaded" data-progressive="/activities_img/sparqling0.png" src="/activities_img/sparqling0_small.png">
+	  	</a>
 	  	</figure>
 	  </div>
 
@@ -851,7 +939,6 @@
 	  	<img style="margin-top: -20%" width=100% src="/drawings/statua.jpg">
 	  </div>
 	</div>
-</section>
 
 
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
@@ -884,6 +971,7 @@ var $grid = $('.grid').imagesLoaded( function() {
 
 </script>
 
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -899,10 +987,9 @@ var $grid = $('.grid').imagesLoaded( function() {
       </div>
 
     <footer class="t-hackcss-footer">
-  <hr />
+  
 
-  <h3 class="footer-heading">picorana.github.io</h3>
-
+  
 <!--  <div class="grid t-hackcss-sm-reversed-grid">
 
     <div class="cell -5of12">
