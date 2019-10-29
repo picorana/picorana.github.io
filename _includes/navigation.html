@@ -16,13 +16,23 @@
     </div>
   </p>
 
-  {% for social in site.social %}
+<!--   {% for social in site.social %}
     {% assign template = social.service|prepend:"icon-"|append:".html" %}
       <span class="t-hackcss-social">
         <i class="t-hackcss-icon">{% include {{ template }} %}</i>
         <a href="{{ social.link }}">{{ social.username }}</a>
       </span>
-  {% endfor %}
+  {% endfor %} -->
+
+  <span class="t-hackcss-social">
+        <a href="https://github.com/picorana">github</a>
+  </span>
+  <span class="t-hackcss-social">
+        <a href="https://dblp.uni-trier.de/pers/hd/b/Bartolomeo:Sara_Di">dblp</a>
+  </span>
+  <span class="t-hackcss-social">
+        <a href="https://scholar.google.com/citations?user=VAi0mIQAAAAJ&hl=en">scholar</a>
+  </span>
 
   <p></p>
 

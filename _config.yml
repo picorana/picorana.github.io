@@ -32,11 +32,11 @@ navigation:
     url: /
   - text: Portfolio
     url: /portfolio
-  - text: Projects
+  - text: (old) Projects
     url: /projects
   - text: Art
     url: /art
-  - text: Work, Education, Awards. Talks
+  - text: Publications, Work, Education
     url: /cv
   - text: Blog
     url: /blog
