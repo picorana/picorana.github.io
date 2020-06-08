@@ -15,7 +15,7 @@
         content="My personal website
 ">
   <link rel="canonical"
-        href="https://picorana.github.io/docs" />
+        href="http://localhost:4000/docs" />
 
   <!-- hack.css -->
   <link rel="stylesheet" href="https://npmcdn.com/hack/dist/hack.css" />
@@ -62,8 +62,8 @@
 <meta property="og:title" content="picorana.github.io" />
 <meta name="description" content="My personal website" />
 <meta property="og:description" content="My personal website" />
-<link rel="canonical" href="https://picorana.github.io/docs" />
-<meta property="og:url" content="https://picorana.github.io/docs" />
+<link rel="canonical" href="http://localhost:4000/docs" />
+<meta property="og:url" content="http://localhost:4000/docs" />
 <meta property="og:site_name" content="picorana.github.io" />
 <script type="application/ld+json">
   {
@@ -71,7 +71,7 @@
     "@type": "WebPage",
     "headline": "picorana.github.io",
     "description": "My personal website",
-    "url": "https://picorana.github.io/docs"
+    "url": "http://localhost:4000/docs"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -103,6 +103,16 @@
     <span style="color: grey">dot</span>
     <span>com</span>
     </div>
+
+    <div style="line-height: 90%; margin-top: 5px">
+      <span>dibartolomeo</span>
+      <span style="color: grey">dot</span>
+      <span>s</span>
+      <span style="color: grey">at</span>
+      <span>northeastern</span>
+      <span style="color: grey">dot</span>
+      <span>edu</span>
+      </div>
   </p>
 
 <!--   
@@ -122,6 +132,10 @@
   </span>
   <span class="t-hackcss-social">
         <a href="https://scholar.google.com/citations?user=VAi0mIQAAAAJ&hl=en">scholar</a>
+  </span>
+
+  <span class="t-hackcss-social">
+    <a href="https://twitter.com/sara_picorana">twitter</a>
   </span>
 
   <p></p>
@@ -190,7 +204,7 @@
   <li><code class="highlighter-rouge">your_name</code> and <code class="highlighter-rouge">email</code> strings to display them in different places on site</li>
   <li><code class="highlighter-rouge">navigation</code> is an array of <code class="highlighter-rouge">text</code> and <code class="highlighter-rouge">url</code> pairs to render the menu</li>
   <li><code class="highlighter-rouge">projects</code> is a setting that contains data for the <code class="highlighter-rouge">examples</code> page, every item must contain <code class="highlighter-rouge">name</code> and <code class="highlighter-rouge">link</code>, <code class="highlighter-rouge">image</code> and <code class="highlighter-rouge">description</code> are optional</li>
-  <li><code class="highlighter-rouge">social</code> contains an array of three required params: <code class="highlighter-rouge">service</code> is used to include a service icon by the <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">icon-{{</span><span class="w"> </span><span class="err">service</span><span class="w"> </span><span class="p">}</span><span class="err">}.html</span><span class="w"> </span><span class="err">%}</span></code> command, <code class="highlighter-rouge">username</code> and <code class="highlighter-rouge">link</code> are quite obvious</li>
+  <li><code class="highlighter-rouge">social</code> contains an array of three required params: <code class="highlighter-rouge">service</code> is used to include a service icon by the <code class="highlighter-rouge">{% include icon-{{ service }}.html %}</code> command, <code class="highlighter-rouge">username</code> and <code class="highlighter-rouge">link</code> are quite obvious</li>
 </ul>
 
         </main>
