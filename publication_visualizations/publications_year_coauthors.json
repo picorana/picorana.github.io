@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "queriedAuthor": "Sara Di Bartolomeo",
+    "dblpResolvedName": "Sara Di Bartolomeo",
+    "dblpProfileUrl": "https://dblp.org/pid/225/8158",
+    "publicationsParsed": 33,
+    "publicationsEmitted": 33
+  },
+  "publications": [
+    {
+      "year": 2026,
+      "coauthors": [
+        "Fabrizio Montecchiani",
+        "Walter Didimo",
+        "Giuseppe Liotta",
+        "Tommaso Piselli",
+        "Martin N&#246;llenburg"
+      ],
+      "title": "",
+      "venue": "IEEE VIS (TVCG)"
+    },
+    {
+      "year": 2026,
+      "coauthors": [
+        "Johannes Fuchs 0001",
+        "Cody Dunne",
+        "Daniel A. Keim",
+        "Maria-Viktoria Heinle"
+      ],
+      "title": "",
+      "venue": "IEEE VIS (TVCG)"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Henry Ehlers",
+        "Daniel Pahr",
+        "Velitchko Filipov",
+        "Hsiang-Yun Wu",
+        "Renata G. Raidou"
+      ],
+      "title": "Wiggle! Wiggle! Wiggle! Visualizing uncertainty in node attributes in straight-line node-link diagrams using animated wiggliness",
+      "dblpKey": "journals/cg/EhlersPBFWR25"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Markus Wallinger",
+        "Martin N&#246;llenburg"
+      ],
+      "title": "Optimizing Staircase Motifs in Biofabric Network Layouts",
+      "dblpKey": "journals/cgf/BartolomeoWN25"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Daniel Pahr",
+        "Henry Ehlers",
+        "Velitchko Filipov",
+        "Christina Stoiber",
+        "Wolfgang Aigner",
+        "Hsiang-Yun Wu",
+        "Renata G. Raidou"
+      ],
+      "title": "NODKANT: Exploring Constructive Network Physicalization",
+      "dblpKey": "journals/cgf/PahrBEFSAWR25"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Johannes Fuchs 0001",
+        "Alexander Frings",
+        "Maria-Viktoria Heinle",
+        "Daniel A. Keim"
+      ],
+      "title": "Quality Metrics and Reordering Strategies for Revealing Patterns in BioFabric Visualizations",
+      "dblpKey": "journals/tvcg/FuchsFHKB25"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Connor Wilson",
+        "Eduardo Puerta",
+        "Tarik Crnovrsanin",
+        "Cody Dunne"
+      ],
+      "title": "Evaluating and Extending Speedup Techniques for Optimal Crossing Minimization in Layered Graph Drawings",
+      "dblpKey": "journals/tvcg/WilsonPCBD25"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Liudas Panavas",
+        "Amit Sarker",
+        "Ali Sarvghad",
+        "Cody Dunne",
+        "Narges Mahyar"
+      ],
+      "title": "Illuminating the Landscape of Differential Privacy: An Interview Study on the Use of Visualization in Real-World Deployments",
+      "dblpKey": "journals/tvcg/PanavasSBSDM25"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Fabian Klute",
+        "Debajyoti Mondal",
+        "Jules Wulms"
+      ],
+      "title": "Graph Drawing Contest Report (Graph Drawing Contest Report)",
+      "dblpKey": "conf/gd/BartolomeoKMW25",
+      "type": "minor"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Raphael Buchm&#252;ller",
+        "Alexander Frings",
+        "Johannes Fuchs 0001",
+        "Daniel A. Keim"
+      ],
+      "title": "Reflections on the Uses and Available Choices of Categorical Colorschemes",
+      "dblpKey": "conf/visigrapp/BartolomeoBF0K25",
+      "type": "minor"
+    },
+    {
+      "year": 2025,
+      "coauthors": [
+        "Daniel Pahr"
+      ],
+      "title": "Investigating the Task Load of Investigating the Task Load in Visualization Studies",
+      "dblpKey": "journals/corr/abs-2509-24643",
+      "type": "minor"
+    },
+    {
+      "year": 2024,
+      "coauthors": [
+        "Johannes Fuchs 0001",
+        "Frederik L. Dennig",
+        "Maria-Viktoria Heinle",
+        "Daniel A. Keim"
+      ],
+      "title": "Exploring the Design Space of BioFabric Visualization for Multivariate Network Analysis",
+      "dblpKey": "journals/cgf/FuchsDHKB24"
+    },
+    {
+      "year": 2024,
+      "coauthors": [
+        "Tarik Crnovrsanin",
+        "David Saffo",
+        "Eduardo Puerta",
+        "Connor Wilson",
+        "Cody Dunne"
+      ],
+      "title": "Evaluating Graph Layout Algorithms: A Systematic Review of Methods and Best Practices",
+      "dblpKey": "journals/cgf/BartolomeoCSPWD24"
+    },
+    {
+      "year": 2024,
+      "coauthors": [
+        "David Saffo",
+        "Tarik Crnovrsanin",
+        "Laura South",
+        "Justin Raynor",
+        "Caglar Yildirim",
+        "Cody Dunne"
+      ],
+      "title": "Unraveling the Design Space of Immersive Analytics: A Systematic Review",
+      "dblpKey": "journals/tvcg/SaffoBCSRYD24"
+    },
+    {
+      "year": 2024,
+      "coauthors": [
+        "Fabian Klute",
+        "Debajyoti Mondal",
+        "Jules Wulms"
+      ],
+      "title": "Graph Drawing Contest Report (Graph Drawing Contest Report)",
+      "dblpKey": "conf/gd/BartolomeoKMW24",
+      "type": "minor"
+    },
+    {
+      "year": 2023,
+      "coauthors": [
+        "Victor Schetinger",
+        "Mennatallah El-Assady",
+        "Andrew M. McNutt",
+        "Matthias Miller",
+        "J. P. A. Passos",
+        "Jane Lydia Adams"
+      ],
+      "title": "Doom or Deliciousness: Challenges and Opportunities for Visualization in the Age of Generative Models",
+      "dblpKey": "journals/cgf/SchetingerBEMMPA23"
+    },
+    {
+      "year": 2023,
+      "coauthors": [
+        "Justin Raynor",
+        "Tarik Crnovrsanin",
+        "Laura South",
+        "David Saffo",
+        "Cody Dunne"
+      ],
+      "title": "The State of the Art in BGP Visualization Tools: A Mapping of Visualization Techniques to Cyberattack Types",
+      "dblpKey": "journals/tvcg/RaynorCBSSD23"
+    },
+    {
+      "year": 2023,
+      "coauthors": [
+        "Giorgio Severi",
+        "Victor Schetinger",
+        "Cody Dunne"
+      ],
+      "title": "Ask and You Shall Receive (a Graph Drawing): Testing ChatGPT's Potential to Apply Graph Layout Algorithms",
+      "dblpKey": "conf/vissym/BartolomeoSSD23",
+      "type": "minor"
+    },
+    {
+      "year": 2023,
+      "coauthors": [
+        "Tarik Crnovrsanin",
+        "Connor Wilson",
+        "Cody Dunne"
+      ],
+      "title": "Indy Survey Tool: A Framework to Unearth Correlations in Survey Data",
+      "dblpKey": "conf/visualization/CrnovrsaninBWD23",
+      "type": "minor"
+    },
+    {
+      "year": 2023,
+      "coauthors": [
+        "Giorgio Severi",
+        "Victor Schetinger",
+        "Cody Dunne"
+      ],
+      "title": "Ask and You Shall Receive (a Graph Drawing): Testing ChatGPT's Potential to Apply Graph Layout Algorithms",
+      "dblpKey": "journals/corr/abs-2303-08819",
+      "type": "minor"
+    },
+    {
+      "year": 2023,
+      "coauthors": [
+        "Victor Schetinger",
+        "Edirlei Soares de Lima",
+        "Christofer Meinecke",
+        "Rudolf Rosa"
+      ],
+      "title": "n Walks in the Fictional Woods",
+      "dblpKey": "journals/corr/abs-2308-06266",
+      "type": "minor"
+    },
+    {
+      "year": 2022,
+      "coauthors": [
+        "Alexis Pister",
+        "Paolo Buono",
+        "Catherine Plaisant",
+        "Cody Dunne",
+        "Jean-Daniel Fekete"
+      ],
+      "title": "Six methods for transforming layered hypergraphs to apply layered graph layout algorithms",
+      "dblpKey": "journals/cgf/BartolomeoPBPDF22"
+    },
+    {
+      "year": 2022,
+      "coauthors": [
+        "Mirek Riedewald",
+        "Wolfgang Gatterbauer",
+        "Cody Dunne"
+      ],
+      "title": "STRATISFIMAL LAYOUT: A modular optimization model for laying out layered node-link network visualizations",
+      "dblpKey": "journals/tvcg/BartolomeoRGD22"
+    },
+    {
+      "year": 2021,
+      "coauthors": [
+        "Yixuan Zhang 0001",
+        "Fangfang Sheng",
+        "Cody Dunne"
+      ],
+      "title": "Sequence Braiding: Visual Overviews of Temporal Event Sequences and Attributes",
+      "dblpKey": "journals/tvcg/BartolomeoZSD21"
+    },
+    {
+      "year": 2021,
+      "coauthors": [
+        "David Saffo",
+        "Caglar Yildirim",
+        "Cody Dunne"
+      ],
+      "title": "Remote and Collaborative Virtual Reality Experiments via Social VR Platforms",
+      "dblpKey": "conf/chi/SaffoBYD21"
+    },
+    {
+      "year": 2020,
+      "coauthors": [
+        "Aditeya Pandey",
+        "Aristotelis Leventidis",
+        "David Saffo",
+        "Uzma Haque Syeda",
+        "El&#237;n Carstensd&#243;ttir",
+        "Magy Seif El-Nasr",
+        "Michelle A. Borkin",
+        "Cody Dunne"
+      ],
+      "title": "Evaluating the Effect of Timeline Shape on Visualization Task Performance",
+      "dblpKey": "conf/chi/BartolomeoPLSSC20"
+    },
+    {
+      "year": 2020,
+      "coauthors": [
+        "David Saffo",
+        "Caglar Yildirim",
+        "Cody Dunne"
+      ],
+      "title": "Crowdsourcing Virtual Reality Experiments using VRChat",
+      "dblpKey": "conf/chi/SaffoYBD20",
+      "type": "minor"
+    },
+    {
+      "year": 2020,
+      "coauthors": [
+        "Cameron Moy",
+        "Julia Belyakova",
+        "Alexi Turcotte",
+        "Cody Dunne"
+      ],
+      "title": "Just TYPEical: Visualizing Common Function Type Signatures in R",
+      "dblpKey": "conf/visualization/MoyBTBD20",
+      "type": "minor"
+    },
+    {
+      "year": 2020,
+      "coauthors": [
+        "Neha Makhija",
+        "Mansi Jain",
+        "Nikolaos Tziavelis",
+        "Laura Di Rocco",
+        "Cody Dunne"
+      ],
+      "title": "Loch Prospector: Metadata Visualization for Lakes of Open Data",
+      "dblpKey": "conf/visualization/MakhijaJTRBD20",
+      "type": "minor"
+    },
+    {
+      "year": 2020,
+      "coauthors": [
+        "David Saffo",
+        "Caglar Yildirim",
+        "Cody Dunne"
+      ],
+      "title": "Two Dimensions for Organizing Immersive Analytics: Toward a Taxonomy for Facet and Position",
+      "dblpKey": "journals/corr/abs-2005-06013",
+      "type": "minor"
+    },
+    {
+      "year": 2020,
+      "coauthors": [
+        "Aditeya Pandey",
+        "Aristotelis Leventidis",
+        "David Saffo",
+        "Uzma Haque Syeda",
+        "El&#237;n Carstensd&#243;ttir",
+        "Magy Seif El-Nasr",
+        "Michelle A. Borkin",
+        "Cody Dunne"
+      ],
+      "title": "Evaluating the Effect of Timeline Shape on Visualization Task Performance",
+      "dblpKey": "journals/corr/abs-2005-06039"
+    },
+    {
+      "year": 2019,
+      "coauthors": [
+        "Yixuan Zhang 0001",
+        "Fangfang Sheng",
+        "Holly B. Jimison",
+        "Cody Dunne"
+      ],
+      "title": "Evaluating Alignment Approaches in Superimposed Time-Series and Temporal Event-Sequence Visualizations",
+      "dblpKey": "conf/visualization/ZhangBSJD19",
+      "type": "minor"
+    },
+    {
+      "year": 2019,
+      "coauthors": [
+        "Yixuan Zhang 0001",
+        "Fangfang Sheng",
+        "Holly B. Jimison",
+        "Cody Dunne"
+      ],
+      "title": "Evaluating Alignment Approaches in Superimposed Time-Series and Temporal Event-Sequence Visualizations",
+      "dblpKey": "journals/corr/abs-1908-07316",
+      "type": "minor"
+    },
+    {
+      "year": 2018,
+      "coauthors": [
+        "Gianluca Pepe",
+        "Domenico Fabio Savo",
+        "Valerio Santarelli"
+      ],
+      "title": "Sparqling: Painlessly Drawing SPARQL Queries over Graphol Ontologies",
+      "dblpKey": "conf/semweb/BartolomeoPSS18",
+      "type": "minor"
+    },
+    {
+      "year": 2018,
+      "coauthors": [
+        "Gianluca Pepe",
+        "Valerio Santarelli",
+        "Domenico Fabio Savo"
+      ],
+      "title": "The SPARQLING System for SPARQL Queries over GRAPHOL ontologies",
+      "dblpKey": "conf/semweb/BartolomeoPSS18a",
+      "type": "minor"
+    }
+  ]
+}

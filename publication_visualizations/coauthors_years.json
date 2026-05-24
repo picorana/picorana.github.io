@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "queriedAuthor": "Sara Di Bartolomeo",
+    "dblpResolvedName": "Sara Di Bartolomeo",
+    "dblpProfileUrl": "https://dblp.org/pid/225/8158",
+    "publicationsParsed": 33,
+    "coauthorCount": 66,
+    "note": "Each {year} entry corresponds to one shared publication (duplicates mean multiple papers in the same year)."
+  },
+  "coauthors": {
+    "Henry Ehlers": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      }
+    ],
+    "Daniel Pahr": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      }
+    ],
+    "Velitchko Filipov": [
+      {
+        "year": 2025
+      }
+    ],
+    "Hsiang-Yun Wu": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      }
+    ],
+    "Renata G. Raidou": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      }
+    ],
+    "Markus Wallinger": [
+      {
+        "year": 2025
+      }
+    ],
+    "Martin N&#246;llenburg": [
+      {
+        "year": 2025
+      }
+    ],
+    "Christina Stoiber": [
+      {
+        "year": 2025
+      }
+    ],
+    "Wolfgang Aigner": [
+      {
+        "year": 2025
+      }
+    ],
+    "Johannes Fuchs 0001": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Alexander Frings": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      }
+    ],
+    "Maria-Viktoria Heinle": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Daniel A. Keim": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Connor Wilson": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      },
+      {
+        "year": 2023
+      }
+    ],
+    "Eduardo Puerta": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Tarik Crnovrsanin": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      },
+      {
+        "year": 2024
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      }
+    ],
+    "Cody Dunne": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      },
+      {
+        "year": 2024
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2022
+      },
+      {
+        "year": 2022
+      },
+      {
+        "year": 2021
+      },
+      {
+        "year": 2021
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2019
+      },
+      {
+        "year": 2019
+      }
+    ],
+    "Liudas Panavas": [
+      {
+        "year": 2025
+      }
+    ],
+    "Amit Sarker": [
+      {
+        "year": 2025
+      }
+    ],
+    "Ali Sarvghad": [
+      {
+        "year": 2025
+      }
+    ],
+    "Narges Mahyar": [
+      {
+        "year": 2025
+      }
+    ],
+    "Fabian Klute": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Debajyoti Mondal": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Jules Wulms": [
+      {
+        "year": 2025
+      },
+      {
+        "year": 2024
+      }
+    ],
+    "Raphael Buchm&#252;ller": [
+      {
+        "year": 2025
+      }
+    ],
+    "Frederik L. Dennig": [
+      {
+        "year": 2024
+      }
+    ],
+    "David Saffo": [
+      {
+        "year": 2024
+      },
+      {
+        "year": 2024
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2021
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Laura South": [
+      {
+        "year": 2024
+      },
+      {
+        "year": 2023
+      }
+    ],
+    "Justin Raynor": [
+      {
+        "year": 2024
+      },
+      {
+        "year": 2023
+      }
+    ],
+    "Caglar Yildirim": [
+      {
+        "year": 2024
+      },
+      {
+        "year": 2021
+      },
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Victor Schetinger": [
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      }
+    ],
+    "Mennatallah El-Assady": [
+      {
+        "year": 2023
+      }
+    ],
+    "Andrew M. McNutt": [
+      {
+        "year": 2023
+      }
+    ],
+    "Matthias Miller": [
+      {
+        "year": 2023
+      }
+    ],
+    "J. P. A. Passos": [
+      {
+        "year": 2023
+      }
+    ],
+    "Jane Lydia Adams": [
+      {
+        "year": 2023
+      }
+    ],
+    "Giorgio Severi": [
+      {
+        "year": 2023
+      },
+      {
+        "year": 2023
+      }
+    ],
+    "Edirlei Soares de Lima": [
+      {
+        "year": 2023
+      }
+    ],
+    "Christofer Meinecke": [
+      {
+        "year": 2023
+      }
+    ],
+    "Rudolf Rosa": [
+      {
+        "year": 2023
+      }
+    ],
+    "Alexis Pister": [
+      {
+        "year": 2022
+      }
+    ],
+    "Paolo Buono": [
+      {
+        "year": 2022
+      }
+    ],
+    "Catherine Plaisant": [
+      {
+        "year": 2022
+      }
+    ],
+    "Jean-Daniel Fekete": [
+      {
+        "year": 2022
+      }
+    ],
+    "Mirek Riedewald": [
+      {
+        "year": 2022
+      }
+    ],
+    "Wolfgang Gatterbauer": [
+      {
+        "year": 2022
+      }
+    ],
+    "Yixuan Zhang 0001": [
+      {
+        "year": 2021
+      },
+      {
+        "year": 2019
+      },
+      {
+        "year": 2019
+      }
+    ],
+    "Fangfang Sheng": [
+      {
+        "year": 2021
+      },
+      {
+        "year": 2019
+      },
+      {
+        "year": 2019
+      }
+    ],
+    "Aditeya Pandey": [
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Aristotelis Leventidis": [
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Uzma Haque Syeda": [
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "El&#237;n Carstensd&#243;ttir": [
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Magy Seif El-Nasr": [
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Michelle A. Borkin": [
+      {
+        "year": 2020
+      },
+      {
+        "year": 2020
+      }
+    ],
+    "Cameron Moy": [
+      {
+        "year": 2020
+      }
+    ],
+    "Julia Belyakova": [
+      {
+        "year": 2020
+      }
+    ],
+    "Alexi Turcotte": [
+      {
+        "year": 2020
+      }
+    ],
+    "Neha Makhija": [
+      {
+        "year": 2020
+      }
+    ],
+    "Mansi Jain": [
+      {
+        "year": 2020
+      }
+    ],
+    "Nikolaos Tziavelis": [
+      {
+        "year": 2020
+      }
+    ],
+    "Laura Di Rocco": [
+      {
+        "year": 2020
+      }
+    ],
+    "Holly B. Jimison": [
+      {
+        "year": 2019
+      },
+      {
+        "year": 2019
+      }
+    ],
+    "Gianluca Pepe": [
+      {
+        "year": 2018
+      },
+      {
+        "year": 2018
+      }
+    ],
+    "Domenico Fabio Savo": [
+      {
+        "year": 2018
+      },
+      {
+        "year": 2018
+      }
+    ],
+    "Valerio Santarelli": [
+      {
+        "year": 2018
+      },
+      {
+        "year": 2018
+      }
+    ],
+    "Fabrizio Montecchiani": [
+      {
+        "year": 2026
+      }
+    ],
+    "Walter Didimo": [
+      {
+        "year": 2026
+      }
+    ],
+    "Giuseppe Liotta": [
+      {
+        "year": 2026
+      }
+    ],
+    "Tommaso Piselli": [
+      {
+        "year": 2026
+      }
+    ]
+}}

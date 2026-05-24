@@ -1,193 +1,479 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sara Di Bartolomeo</title>
+    <meta
+      name="description"
+      content="Academic personal website for Sara Di Bartolomeo, Senior Postdoc at TU Wien working in data visualization and graph drawing."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="publication_visualizations/publication-visualizations.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#publication-visualizations">Visualizations</a>
+        <a href="#awards">Awards</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#art">Art</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<div>
-
-  <section>
-    <br>
-    <br>
-    <!--
-    <div align="center" style="font-size: 25px; line-height: 110%; color: gray; margin-top:10%"><b>"Der Ingenieur ist <br>der Gestalter <br>unseres Zeitalters"</b></div>
-    <div align="center" style="font-size: 10px; line-height: 110%; color: gray"><b>"The engineer is the artist of our epoch"</b></div>
-    <div align="center" style="font-size: 10px; line-height: 110%; color: gray; margin-left: 100px"><i>-Bauhaus museum, Berlin</i></div>
-    <br>-->
-
-    <div style="text-align: center; margin-top: 50px; margin-bottom: 20px">
-      <div class="github-card" data-github="picorana" data-width="400" data-height="" data-theme="default"></div>
-      <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-    </div>
-
-    <br>
-<!--     <div style="font-size: 12px">
-    <br>Hello! I am Sara.
-    <br>I am a <b>PhD student in Computer Science</b> by day, and a <b>painter</b> by night. I try to mix art and algorithms in an attempt to get this two parts of me together. 
-    <br><br>My interests range from Data Science, 3D Computer Graphics, Data Visualization, Machine Learning, Natural Language Processing and Algorithms to Digital Painting, Traditional Painting and Generative Art.
-    <br><br>I like sharing my knowledge, and finding all sorts of ways to get people interested. For this purpose, I teach coding courses to children, organize workshops, and keep up a strong passion in <b>open source</b> software. 
-    <br><br>I also like <a href="/activities_img/pollino_small.jpg">parrots</a>. 
-    </div> -->
-
-    <br>
-    <br>
-    <div style="font-size: 12px">
-      Hello! I am Sara. 
-      <br> I am a <b>PhD student in Computer Science</b> at Khoury College of Computer Sciences at Northeastern, Boston, specializing in <b>Data Visualization</b>, currently focusing on <b>temporal event sequence visualization</b> and <b>network layout algorithms</b>. 
-
-      <br><br> Scroll down to see an overview of my projects. The page contains my experiments with data visualization, 3d computer graphics, game development, machine learning, generative art, and my paintings. 
-
-      <br><br>I also like <a href="/activities_img/pollino_small.jpg">parrots</a>.  
-    </div>
-  </section>
-
-  <br>
-
-  <section>
-    <h1>Portfolio</h1>
-  {% include portfolio.html %}
-  </section>
-
-  <section>
-    <h1>Posts</h1>
-
-    {% for post in site.posts limit:3 %}
-      {% assign nth = forloop.index0 | modulo:2 %}
-      <div class="media t-hackcss-media">
-
-        {% if nth == 0 %}
-        <div class="t-hackcss-media-shift media-left">
-          <img class="t-hackcss-media-image"
-               src="{{ post.image_preview }}" alt="{{ post.title }}"
-               title="{{ post.title }}" />
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">Computer Science / Data Visualization</p>
+          <h1 id="intro-title">Sara Di Bartolomeo</h1>
+          <p class="lead">
+            I am a Senior Postdoc working in data visualization and graph
+            drawing.
+          </p>
+          <p>
+            I am currently working in the
+            <a href="https://www.ac.tuwien.ac.at/">Algorithms and Complexity</a>
+            research unit at TU Wien. My current work is funded by the FWF
+            ESPRIT project
+            <em>Simultaneous Multiprojection Graph Visualization</em>, where I
+            am principal investigator.
+          </p>
+          <div class="links" aria-label="Profile links">
+            <span class="obfuscated-email">sdb [at] ac [dot] tuwien [dot] ac [dot] at</span>
+            <a href="https://github.com/picorana">GitHub</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=VAi0mIQAAAAJ">Google Scholar</a>
+          </div>
+          <br>
+          <p>
+            A link to my old website can be found here:
+            &lt;<a href="legacy/">old website</a>&gt;.
+          </p>
         </div>
-        {% endif %}
+        <img
+          src="photos/1753999439812.jpg"
+          alt="Portrait of Sara Di Bartolomeo"
+          class="portrait"
+        >
+      </section>
 
-        <div class="media-body">
-          <div class="media-heading">
-            <span>{{ post.date | date_to_string }} &raquo;
-              {% if post.external_url %}
-                <a href="{{ post.external_url }}" target="_blank" title="{{ project.name }}">
-                  {{ post.title }}
-                </a>
-              {% else %}
-                <a href="{{ post.url | prepend: site.baseurl }}" title="{{ project.name }}">
-                  {{ post.title }}
-                </a>
-              {% endif %}
+      <section id="research" class="section">
+        <h2>Research</h2>
+        <p>
+          My research is about how to draw complex data so that people can read
+          structure, compare alternatives, and reason about change. I work
+          between graph drawing and information visualization, combining
+          algorithm design with empirical evaluation.
+        </p>
+        <p>
+          I am especially interested in layered and multi-layer graph layouts,
+          network visualization, temporal event sequences, and visualization
+          techniques that can be studied both formally and with users.
+        </p>
+        <div class="grid">
+          <article>
+            <h3>Graph Drawing</h3>
+            <p>
+              Algorithms and models for layered graphs, hypergraphs, and
+              multi-perspective network layouts.
+            </p>
+          </article>
+          <article>
+            <h3>Temporal Data</h3>
+            <p>
+              Visual representations for event sequences, timelines, and
+              patterns that unfold over time.
+            </p>
+          </article>
+          <article>
+            <h3>Evaluation</h3>
+            <p>
+              Studies and reviews of how visualization techniques are assessed,
+              compared, and used in practice.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <h2>Selected Publications</h2>
+        <p>
+          A complete list is available on
+          <a href="https://scholar.google.com/citations?hl=en&user=VAi0mIQAAAAJ">Google Scholar</a>.
+        </p>
+        <ol class="publications">
+          <li>
+            <a href="https://doi.org/10.1111/cgf.70139">
+              Optimizing Staircase Motifs in Biofabric Network Layouts
+            </a>
+            <span class="award-tag">EuroVis 2025 honorable mention</span>
+            <span>
+              Sara Di Bartolomeo, Martin Wallinger, Martin Nöllenburg.
+              Computer Graphics Forum, 2025.
             </span>
-          </div>
-          <div class="media-content">
-            {{ post.short_description }}
-          </div>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1111/cgf.70140">
+              NODKANT: Exploring Constructive Network Physicalization
+            </a>
+            <span class="award-tag">EuroVis 2025 best paper</span>
+            <span>
+              Daniel Pahr, Sara Di Bartolomeo, Henry Ehlers, Velitchko Filipov,
+              Christina Stoiber, Wolfgang Aigner, Hsiang-Yun Wu, Renata G.
+              Raidou. Computer Graphics Forum, 2025.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/TVCG.2025.3634228">
+              F2Stories: A Modular Framework for Multi-Objective Optimization
+              of Storylines with a Focus on Fairness
+            </a>
+            <span class="award-tag">IEEE VIS 2025 honorable mention</span>
+            <span>
+              Tommaso Piselli, Giuseppe Liotta, Fabrizio Montecchiani, Martin
+              Nöllenburg, Sara Di Bartolomeo. IEEE Transactions on Visualization
+              and Computer Graphics, 2025.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/TVCG.2024.3456349">
+              Evaluating and Extending Speedup Techniques for Optimal Crossing
+              Minimization in Layered Graph Drawings
+            </a>
+            <span>
+              Connor Wilson, Emilia Puerta, Tarik Crnovrsanin, Sara Di
+              Bartolomeo, Cody Dunne. IEEE Transactions on Visualization and
+              Computer Graphics, 2025.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/TVCG.2024.3456312">
+              Quality Metrics and Reordering Strategies for Revealing Patterns
+              in Biofabric Visualizations
+            </a>
+            <span>
+              Johannes Fuchs, Alexander Frings, Marie-Violaine Heinle, Daniel
+              A. Keim, Sara Di Bartolomeo. IEEE Transactions on Visualization
+              and Computer Graphics, 2025.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1111/cgf.15073">
+              Evaluating Graph Layout Algorithms: A Systematic Review of
+              Methods and Best Practices
+            </a>
+            <span>
+              Sara Di Bartolomeo, Tarik Crnovrsanin, David Saffo, Emilia
+              Puerta, Connor Wilson, Cody Dunne. Computer Graphics Forum, 2024.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1111/cgf.15079">
+              Exploring the Design Space of Biofabric Visualization for
+              Multivariate Network Analysis
+            </a>
+            <span>
+              Johannes Fuchs, Franziska L. Dennig, Marie-Violaine Heinle,
+              Daniel A. Keim, Sara Di Bartolomeo. Computer Graphics Forum,
+              2024.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/TVCG.2023.3327368">
+              Unraveling the Design Space of Immersive Analytics: A Systematic
+              Review
+            </a>
+            <span>
+              David Saffo, Sara Di Bartolomeo, Tarik Crnovrsanin, Lauren South,
+              Joseph Raynor, Caglar Yildirim, Cody Dunne. IEEE Transactions on
+              Visualization and Computer Graphics, 2024.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1111/cgf.14538">
+              Six Methods for Transforming Layered Hypergraphs to Apply Layered
+              Graph Layout Algorithms
+            </a>
+            <span>
+              Sara Di Bartolomeo, Anastasia Pister, Paolo Buono, Catherine
+              Plaisant, Cody Dunne, Jean-Daniel Fekete. Computer Graphics Forum,
+              2022.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/TVCG.2021.3114756">
+              STRATISFIMAL LAYOUT: A Modular Optimization Model for Laying Out
+              Layered Node-Link Network Visualizations
+            </a>
+            <span>
+              Sara Di Bartolomeo, Mirek Riedewald, Wolfgang Gatterbauer, Cody
+              Dunne. IEEE Transactions on Visualization and Computer Graphics,
+              2021.
+            </span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1109/TVCG.2020.3030442">
+              Sequence Braiding: Visual Overviews of Temporal Event Sequences
+              and Attributes
+            </a>
+            <span>
+              Sara Di Bartolomeo, Yixuan Zhang, Fangfang Sheng, Cody Dunne.
+              IEEE Transactions on Visualization and Computer Graphics, 2020.
+            </span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="publication-visualizations" class="section">
+        <h2>Publication Visualizations</h2>
+        <p>
+          Two compact views of my publication record: venues over time, and
+          coauthors connected to papers.
+        </p>
+        <h3>Venues by Year</h3>
+        <div class="visualization-scroll">
+          <div
+            id="venue-visualization"
+            class="visualization"
+            aria-label="Visualization of publication venues by year"
+          ></div>
         </div>
-
-        {% if nth == 1 %}
-        <div class="t-hackcss-media-shift media-right">
-          <img class="t-hackcss-media-image"
-               src="{{ post.image_preview }}" alt="{{ post.title }}"
-               title="{{ post.title }}" />
+        <p class="caption">
+          Each dot is one publication, positioned by publication year and venue.
+          Larger dots mark major journal or conference venues.
+        </p>
+        <h3>Coauthors and Papers</h3>
+        <div class="visualization-scroll">
+          <div
+            id="coauthor-visualization"
+            class="visualization"
+            aria-label="Visualization of coauthors and papers by year"
+          ></div>
         </div>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </section>
+        <p class="caption">
+          Each vertical mark is one publication, connecting the coauthors who
+          appear on that paper. Bolder vertical lines indicate major
+          publications, thinner lines indicate short papers and workshops. Bold
+          horizontal lines indicate frequent coauthors (>=3 publications).
+          Colored dots indicate coauthor affiliation country. Authors are sorted
+          by year of first publication.
+        </p>
+      </section>
 
-
-  <section name='projects'>
-  	<h1> Projects overview </h1>
-  		Find more projects <a href="{{site.baseurl}}/projects">here</a>!<br><br>
-	  	<div class="grid t-hackcss-cards">
-	  	{% assign items = site.projects | sort: 'date' | reverse %}
-	  	{% for project in items limit:2 %}
-
-	    {% assign tags = project.tags | split: ', ' %}
-      <div class="cell -6of12 t-hackcss-cards-cell" data-tags='{{ tags | join: " " }} {{ project.type }}'>
-
-        
-        <div class="card" style="margin-bottom: 10px;" >
-          <header class="card-header"><b>{{ project.name }} </b><span style="font-size:10px; color: grey">({{ project.date | date: '%B %Y'}})</span></header>
-          <div class="card-content">
-            <div class="inner">
-
-              {% if project.image %}
-              <center style="display: inline-block; white-space: nowrap">
-                  <div id="picture1">
-                  <a href="{{ project.image }}" data-lightbox="image-1">
-                  <img src="{{ project.image }}" 
-                  style="width:60%; position:relative"
-                  alt="{{ project.name }}"
-                  title="{{ project.name }}"
-                  /></a>
-                  </div>
-                  <div id="otherpictures" style=" max-height: 10px">
-                  {% if project.image1 %}
-                    <a href="{{ project.image1 }}" data-lightbox="image-1">
-                    <img src="{{ project.image1 }}" 
-                    style="width:30%; position:relative"
-                    alt="{{ project.name }}"
-                    title="{{ project.name }}"
-                    /></a>
-                  {% endif %}
-                  {% if project.image2 %}
-                    <a href="{{ project.image2 }}" data-lightbox="image-1">
-                    <img src="{{ project.image2 }}" 
-                    style="width:30%;"
-                    alt="{{ project.name }}"
-                    title="{{ project.name }}"
-                    /></a>
-                  {% endif %}
-                  </div>
-              </center>
-              {% endif %}
-
-              <br>
-              <center>
-              {% assign tags = project.tags | split: ', ' %}
-              {% for tag in tags limit:3 %}
-              <span style="font-size:10px; color: #999999; line-height: 120%">#{{tag}}</span>
-              {% endfor %}
-              <span style="font-size:10px; color: #999999; line-height: 120%">#...</span>
-              </center>
-
-              <div class="t-hackcss-cards-text" style="font-size: 11px; line-height: 110%;">{{ project.description }}</div><br>
-
-              {% if project.team %}
-              <div style="font-size:10px; color: #555555; line-height: 120%"> team: {{ project.team }} </div>
-              {% endif %}
-
-              {% if project.link %}
-              <div class="t-hackcss-cards-link"> <a href="{{ project.link }}" title="{{ project.name }}" target="_blank" style="font-size: 11px; text-align: center"> {{ project.name }}</a></div>
-              {% endif %}
-
-            </div>
-          </div>
+      <section class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article>
+            <h3>
+              Senior Postdoc,
+              <a href="https://www.ac.tuwien.ac.at/">TU Wien</a>
+            </h3>
+            <p>
+              Principal investigator of the
+              <a href="https://www.fwf.ac.at/forschungsradar/10.55776/ESP513">FWF ESPRIT project</a>
+              <em>Simultaneous Multiprojection Graph Visualization</em>.
+            </p>
+            <time>2024-present</time>
+          </article>
+          <article>
+            <h3>
+              Postdoc,
+              <a href="https://www.vis.uni-konstanz.de/en/members/di-bartolomeo">University of Konstanz</a>
+            </h3>
+            <p>
+              Worked in the
+              <a href="https://www.cgmi.uni-konstanz.de/">Visual Computing Group</a>,
+              taught data visualization courses, and supervised a small group
+              of PhD students.
+            </p>
+            <time>2023-2024</time>
+          </article>
+          <article>
+            <h3>
+              Research Intern,
+              <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>
+            </h3>
+            <p>
+              Worked on
+              <a href="https://www.microsoft.com/en-us/research/?p=365741">data comics</a>
+              for representing network incidents.
+            </p>
+            <time>2022</time>
+          </article>
+          <article>
+            <h3>
+              Research Intern,
+              <a href="https://www.inria.fr/en">INRIA</a>
+            </h3>
+            <p>
+              Studied
+              <a href="https://doi.org/10.1111/cgf.14538">layout algorithms for hypergraphs</a>.
+            </p>
+            <time>2021</time>
+          </article>
+          <article>
+            <h3>
+              PhD Student,
+              <a href="https://vis.khoury.northeastern.edu/">Northeastern University</a>
+            </h3>
+            <p>
+              PhD in Computer Science advised by Cody Dunne. Dissertation:
+              <a href="https://repository.library.northeastern.edu/files/neu%3A4f196k78t/fulltext.pdf">
+                <em>Layered Graphs and Their Layouts, Evaluations, and
+                Applications</em></a>.
+            </p>
+            <time>2018-2023</time>
+          </article>
+          <article>
+            <h3>
+              Research Assistant,
+              <a href="https://www.dis.uniroma1.it/en">Sapienza University of Rome</a>
+            </h3>
+            <p>
+              Worked on
+              <a href="https://www.dis.uniroma1.it/~savo/papers/VOILA-2018.pdf">SPARQLING</a>,
+              a graphical interface for SPARQL queries over GRAPHOL ontologies.
+            </p>
+            <time>2018</time>
+          </article>
+          <article>
+            <h3>
+              <a href="https://summerofcode.withgoogle.com/archive/">Google Summer of Code</a>,
+              <a href="https://processing.org/">Processing Foundation</a>
+            </h3>
+            <p>
+              Developer and mentor on Processing for Android projects,
+              including <a href="https://github.com/Calsign/APDE">APDE</a>.
+            </p>
+            <time>2017-2018</time>
+          </article>
         </div>
-      </div>
-      {% endfor %}
-    </div>
+      </section>
 
-    
-  </section>
+      <section id="awards" class="section">
+        <h2>Awards and Funding</h2>
+        <ul>
+          <li>
+            <a href="https://www.fwf.ac.at/forschungsradar/10.55776/ESP513">FWF ESPRIT Grant</a>,
+            principal investigator, 2024-2027.
+          </li>
+          <li>
+            Best paper at EuroVis 2025 for
+            <a href="https://doi.org/10.1111/cgf.70140">
+              <em>NODKANT: Exploring Constructive Network Physicalization</em></a>,
+            and honorable mention at EuroVis 2025 for
+            <a href="https://doi.org/10.1111/cgf.70139">
+              <em>Optimizing Staircase Motifs in Biofabric Network Layouts</em></a>.
+          </li>
+          <li>
+            Best paper honorable mention at IEEE VIS 2025 for
+            <a href="https://doi.org/10.1109/TVCG.2025.3634228">
+              <em>F2Stories: A Modular Framework for Multi-Objective
+              Optimization of Storylines with a Focus on Fairness</em></a>.
+          </li>
+          <li>
+            <a href="https://www.eg.org/wp/eurographics-awards-programme/eurovis-phd-award/">Best Dissertation Award</a>,
+            EuroVis 2024.
+          </li>
+          <li>
+            <a href="https://phd.northeastern.edu/opportunity/northeastern-university-dissertation-completion-fellowships-6/">Northeastern Dissertation Completion Fellowship</a>,
+            2022.
+          </li>
+          <li>
+            Selected as one of the
+            <a href="https://alumni.northeastern.edu/for-students/huntington-100/">Huntington 100</a>
+            at Northeastern University, 2022.
+          </li>
+          <li>
+            <a href="https://github.com/picorana/sapienza_masters_thesis/blob/master/tesi.pdf">Excellence Path Award</a>,
+            Sapienza University of Rome, 2017.
+          </li>
+        </ul>
+      </section>
 
-  <section>
-  	<h1> Artworks overview </h1>
-  	This is the art I make in my free time. You can see more <a href="{{site.baseurl}}/art">here</a>.<br><br>
+      <section id="teaching" class="section">
+        <h2>Teaching and Outreach</h2>
+        <p>
+          I teach and mentor students across data visualization, graph drawing,
+          and creative computing. At
+          <a href="https://www.tuwien.at/en/">TU Wien</a>, I teach the Seminar
+          for Master Students in Logic and Computation. At the
+          <a href="https://www.uni-konstanz.de/en/">University of Konstanz</a>,
+          I taught Advanced Topics in Data Visualization and Basic Topics in
+          Data Visualization. At
+          <a href="https://www.khoury.northeastern.edu/">Northeastern</a>, I
+          was a teaching assistant for CS7250 Data Visualization.
+        </p>
+        <p>
+          I have also taught coding and creative computing to children and
+          teenagers, and mentored students through
+          <a href="https://summerofcode.withgoogle.com/archive/">Google Summer of Code</a>
+          and research supervision.
+        </p>
+        <div class="photo-grid">
+          <img src="photos/1760653017777.jpg" alt="Teaching and outreach photo">
+          <img src="photos/DSC05346-Verbessert-RR.jpg" alt="Teaching and outreach photo">
+          <img src="photos/IMG_20170722_170437.jpg" alt="Teaching and outreach photo">
+        </div>
+      </section>
 
-  	{% for painting in site.drawings limit:3 %}
-  	<a href="{{ site.baseurl }}/drawings/{{painting.img}}" data-lightbox="image-1"><img src="{{ site.baseurl }}/drawings/{{painting.img}}" width="auto" height='180px'></img></a>
-  	{% endfor %}
-  </section>
+      <section class="section">
+        <h2>Service</h2>
+        <p>
+          I regularly review for EuroVis, IEEE VIS, CHI, PacificVis, and Graph
+          Drawing. I have served on program committees and organizing teams for
+          venues and workshops including EuroVis, PacificVis, Graph Drawing,
+          alt.vis, VISGuides, and the Graph Drawing Contest.
+        </p>
+      </section>
 
+      <section id="art" class="section">
+        <h2>Art</h2>
+        <p>
+          I used to keep a small art portfolio on my old website. A few pieces
+          are below; more are archived on the
+          <a href="legacy/art.html">old art page</a>.
+        </p>
+        <div class="art-grid">
+          <a href="old/drawings/3.jpg">
+            <img src="old/drawings/3.jpg" alt="Watercolor artwork">
+          </a>
+          <a href="old/drawings/signore_med.jpg">
+            <img src="old/drawings/signore_med.jpg" alt="Watercolor portrait">
+          </a>
+          <a href="old/drawings/paesag.jpg">
+            <img src="old/drawings/paesag.jpg" alt="Watercolor landscape">
+          </a>
+        </div>
+      </section>
 
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>
+          The fastest way to reach me is by email. You can also find code and
+          older projects on GitHub.
+        </p>
+        <div class="links">
+          <span class="obfuscated-email">sdb [at] ac [dot] tuwien [dot] ac [dot] at</span>
+          <span class="obfuscated-email">dibartolomeo [dot] sara [at] gmail [dot] com</span>
+          <a href="https://github.com/picorana">github.com/picorana</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=VAi0mIQAAAAJ">Google Scholar</a>
+        </div>
+      </section>
+    </main>
 
-</div>
-<script src = "{{site.baseurl}}/javascripts/js/lightbox-plus-jquery.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-92850610-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <footer>
+      <p>
+        © <span id="year">2026</span> Sara Di Bartolomeo.
+      </p>
+    </footer>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        window.renderPublicationVisualizations?.();
+      });
+    </script>
+  </body>
+</html>

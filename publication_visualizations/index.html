@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Publication Visualizations</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+    </style>
+    <script src="biofabric.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css">
+</head>
+<body>
+    
+</body>
+<script>
+    async function init(){
+        let data = await d3.json('dblp_venues_years.json');
+
+        let container = d3.select('body')
+                .append('div')
+                .style('margin-bottom', '50px');
+
+        let margin = {top: 20, right: 30, bottom: 40, left: 400},
+            width = 1300 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        let svg = container.append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+        let years = d3.range(2018, 2027);
+        let venues = Object.keys(data);
+
+        let venuedata = {
+            "IEEE Trans. Vis. Comput. Graph.": {
+                displayname: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+                type: "major"
+            },
+            "IEEE VIS (Short Papers)": {
+                displayname: "IEEE VIS Short Papers",
+                type: "short"
+            },
+            "CHI": {
+                displayname: "ACM Conference on Human Factors in Computing Systems (CHI)",
+                type: "major"
+            },
+            "CHI Extended Abstracts": {
+                displayname: "CHI Extended Abstracts",
+                type: "extended"
+            },
+            "Comput. Graph. Forum": {
+                displayname: "Computer Graphics Forum (CGF)",
+                type: "major"
+            },
+            "EuroVis (Short Papers)": {
+                displayname: "EuroVis Short Papers",
+                type: "short"
+            },
+            "Comput. Graph.": {
+                displayname: "Computers & Graphics (C&G)",
+                type: "major"
+            },
+            "GD": {
+                displayname: "Graph Drawing (GD)",
+                type: "minor"
+            },
+            "VISIGRAPP (1): GRAPP, HUCAPP, IVAPP": {
+                displayname: "IVAPP",
+                type: "minor"
+            }
+        }
+
+        // let awards = {
+        //     "IEEE Trans. Vis. Comput. Graph.": {
+        //         2021: "Honorable Mention"
+        //     },
+        // }
+
+        let excludevenues = [
+            "CoRR",
+            "VOILA@ISWC",
+            "ISWC (P&D/Industry/BlueSky)",
+            "ISWC (P&#38;D/Industry/BlueSky)",
+            // "VISIGRAPP (1): GRAPP, HUCAPP, IVAPP"
+        ];
+
+        venues = venues.filter(v => !excludevenues.includes(v));
+
+        let xScale = d3.scaleBand()
+            .domain(years)
+            .range([margin.left, width - margin.right])
+            .padding(0.1);
+
+        let yScale = d3.scaleBand()
+            .domain(Object.keys(venuedata).concat(venues.filter(v => !Object.keys(venuedata).includes(v))).reverse())
+            .range([height - margin.bottom, margin.top]);
+
+        svg.append('g')
+            .attr('transform', 'translate(0,' + (height - margin.bottom) + ')')
+            .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
+            .call(g => g.selectAll('.domain').remove()) // Remove horizontal axis line
+            .call(g => g.selectAll('.tick line')
+                .attr('stroke-width', 3)) // Thicker vertical ticks
+            .call(g => g.selectAll('.tick text')
+                .style('fill', '#333')
+                .style('font-weight', 'bold'))
+                .style('font-size', '14px');
+
+        // for every year, draw a vertical dashed line
+        for (let year of years) {
+            let x = xScale(year) + xScale.bandwidth() / 2;
+            svg.append("line")
+                .attr("x1", x)
+                .attr("y1", margin.top)
+                .attr("x2", x)
+                .attr("y2", height - margin.bottom)
+                .attr("stroke", "#eee")
+                .attr("stroke-dasharray", "6 10")
+                .style("stroke-linecap", "round")
+                .attr("stroke-width", 3);
+        }
+
+        svg.append('g')
+            .attr('transform', 'translate(' + (margin.left) + ',0)')
+            .call(d3.axisLeft(yScale)
+            .tickFormat(d => venuedata[d]?.displayname || d))
+            .call(g => g.selectAll('.domain, .tick line').remove())
+            .call(g => g.selectAll('.tick text')
+            .style('fill', '#222')
+            .style('font-weight', 'bold'))
+            .style('font-size', '12px');
+
+        
+        for (let venue in data) {
+
+            if (!yScale(venue)) continue;
+
+            svg.append("line")
+                .attr("x1", margin.left)
+                .attr("y1", yScale(venue) + yScale.bandwidth() / 2)
+                .attr("x2", width - margin.right)
+                .attr("y2", yScale(venue) + yScale.bandwidth() / 2)
+                .attr("stroke", "#eee")
+                .attr("stroke-dasharray", "6 10")
+                .style("stroke-linecap", "round")
+                .attr("stroke-width", 3);
+
+
+            for (let year = 2018; year <= 2026; year++) {
+                let count = data[venue][year] || 0;
+                
+                let publications = data[venue].filter(pub => pub.year === year);
+
+                if (publications.length === 0) continue;
+                
+                let cx = xScale(year) + xScale.bandwidth() / 2;
+                let cy = yScale(venue) + yScale.bandwidth() / 2;
+                let r = 8;
+                let positions = [];
+
+                // Arrange circles based on count
+                if (publications.length === 1) {
+                    positions = [[cx, cy]];
+                } else if (publications.length === 2) {
+                    positions = [
+                        [cx - r, cy],
+                        [cx + r, cy]
+                    ];
+                } else if (publications.length === 3) {
+                    let h = r * Math.sqrt(3);
+                    positions = [
+                        [cx, cy - h / 2],
+                        [cx - r, cy + h / 2],
+                        [cx + r, cy + h / 2]
+                    ];
+                } else if (publications.length === 4) {
+                    positions = [
+                        [cx - r, cy - r],
+                        [cx + r, cy - r],
+                        [cx - r, cy + r],
+                        [cx + r, cy + r]
+                    ];
+                } else if (count > 4) {
+                    // Arrange in a grid for more than 4
+                    let grid = Math.ceil(Math.sqrt(count));
+                    let spacing = r * 2;
+                    let startX = cx - ((grid - 1) * spacing) / 2;
+                    let startY = cy - ((grid - 1) * spacing) / 2;
+                    for (let i = 0; i < count; i++) {
+                        let row = Math.floor(i / grid);
+                        let col = i % grid;
+                        positions.push([startX + col * spacing, startY + row * spacing]);
+                    }
+                }
+
+                positions.forEach(([px, py]) => {
+                    svg.append('circle')
+                        .attr('cx', px)
+                        .attr('cy', py)
+                        .attr('r', venuedata[venue]?.type != 'major' ? 5 : 7)
+                        .attr('fill', d3.schemeTableau10[venues.indexOf(venue) % 10])
+                        .attr('class', 'bar');
+                });
+            }
+        }
+    }
+
+    init();
+</script>
+</html>

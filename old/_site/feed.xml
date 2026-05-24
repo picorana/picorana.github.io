@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>picorana.github.io</title>
+    <description>My personal website
+</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 08 Jun 2020 14:45:45 -0400</pubDate>
+    <lastBuildDate>Mon, 08 Jun 2020 14:45:45 -0400</lastBuildDate>
+    <generator>Jekyll v3.6.3</generator>
+    
+      <item>
+        <title>First month of GSoC is over!</title>
+        <description>&lt;p&gt;So, at the end of the first month of Google Summer Of Code, the students go through an evaluation to decide if they are committed enough to the project and if the work they are producing is good. I was very happy to know that I passed it (:&lt;/p&gt;
+
+&lt;p&gt;As I was talking about in the previous post, my project for Google Summer Of Code is a VR application with Processing VR.
+The application was going to be a demo, so me and my mentors decided together what the demo was going to be.&lt;/p&gt;
+
+&lt;p&gt;In the first period, we worked and decided how the sketch was going to be.
+We decided that it would be a desert, with dunes.&lt;/p&gt;
+
+&lt;p&gt;I am also adding some visual details, like procedural cactus-es (cacti?), and phone towers. 
+I’m trying to do everything procedural, so everything can be generated according to different inputs. Also, I’m not very good at 3D modeling (:&lt;/p&gt;
+
+&lt;p&gt;Take a look at how the terrain is evolving, here:&lt;/p&gt;
+
+&lt;p&gt;The first version was just generic, the first thing that came out when I first tried doing a procedurally generated terrain.
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;70%&quot; src=&quot;/images/terrain.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second version was a little more defined: the terrain is now clearly a desert, and it has a road! 
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;70%&quot; src=&quot;/images/terrain2.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Third version, we now have a sky and plants. 
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;90%&quot; src=&quot;/images/terrain3.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, link to the repo! &lt;a href=&quot;https://github.com/picorana/VR_Demo_GSoC17&quot;&gt;VR demo on github&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 03 Jul 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/google_summer_of_code/2017/07/03/gsoc3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/google_summer_of_code/2017/07/03/gsoc3.html</guid>
+        
+        
+        <category>google_summer_of_code</category>
+        
+      </item>
+    
+      <item>
+        <title>Google Summer of Code with Processing update!</title>
+        <description>&lt;p&gt;So, three weeks have passed from the beginning of Google Summer of Code, and since we are starting to have some significative things to show, it’s time to talk about how it’s going (:&lt;/p&gt;
+
+&lt;p&gt;First of all: the goal of the three months period is to produce a Virtual Reality experience to show and test the new VR mode for processing-android.&lt;/p&gt;
+
+&lt;p&gt;As of now, I produced three attempts - I have to choose one among these, but I still haven’t decide which one of them is the one I prefer, and my mentors are giving me plenty of creative freedom, which I really appreciate. The idea is to make something that can move according to music.&lt;/p&gt;
+
+&lt;p&gt;First one: &lt;strong&gt;Geometry&lt;/strong&gt;. This attempt was about making mesmerizing geometries. All that you see in the screenshot is rotating, producing a trippy effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;80%&quot; src=&quot;/images/geometry_screenshot.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Second one: &lt;strong&gt;Procedural Terrain&lt;/strong&gt;. This terrain is generated using two-dimensional perlin noise to determine the height in each point, and new parts of terrain are generated as you move forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;80%&quot; src=&quot;/images/terrain_screenshot.png&quot; /&gt;
+&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;40%&quot; src=&quot;/images/terrain.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Third one: &lt;strong&gt;Procedural City&lt;/strong&gt;. The concept behind this one is pretty similar to the previous one, but there’s a city being generated and not a terrain. It’s also a little more visually dense than the previous one, as I had in mind a japanese commercial street while doing this one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&quot;display: block; margin: 0 auto;&quot; width=&quot;80%&quot; src=&quot;/images/city_screenshot.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Link to the repo on github for the curious: &lt;a href=&quot;https://github.com/picorana/VR_Demo_GSoC17&quot;&gt;VR_Demo_GSoC17 on Github&lt;/a&gt;. 
+Mind you that if you ever want to try this, you will need to have the latest beta release of processing-android (&lt;a href=&quot;https://github.com/processing/processing-android/releases/tag/android-262&quot;&gt;you can find it here&lt;/a&gt; - not the normal android mode that you get when downloading it directly from the Processing IDE!)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/google_summer_of_code/2017/06/19/gsoc2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/google_summer_of_code/2017/06/19/gsoc2.html</guid>
+        
+        
+        <category>google_summer_of_code</category>
+        
+      </item>
+    
+      <item>
+        <title>Getting into Google Summer of Code and/or Outreachy</title>
+        <description>&lt;p&gt;So, this year I have been selected for both Google Summer of Code and Outreachy.&lt;/p&gt;
+
+&lt;p&gt;Since these are both programs that are very desirable on a Computer Science curriculum, and also very important in a student’s growth, I wanted to publicly share my experience with both programs to encourage anybody who is reading this blog post (if they have the requirements) to apply, and to give an example of an accepted proposal.&lt;/p&gt;
+
+&lt;p&gt;Since there is a huge number of guides on how to get accepted and how the application period and the internship period work, this post will be more about my personal experience and what challenges I had to overcome.&lt;/p&gt;
+
+&lt;p&gt;Even if I was accepted into both programs, I had to choose only one of the two. I chose Google Summer of Code, and in the next posts I will explain more in detail why.&lt;/p&gt;
+
+&lt;p&gt;This first post will only be a brief overview of what the two programs are, and I the next posts I will talk more in detail about my experience:&lt;/p&gt;
+
+&lt;h1 id=&quot;overview-of-the-programs&quot;&gt;Overview of the programs&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code&lt;/a&gt;&lt;/strong&gt; is a program aimed at university students, with the goal of bringing them closer to open source projects and organizations. The program is organized by Google, but within the same program you can chose among a lot of organizations (all of them will propose full open source projects) that you want to contribute to. There are about 200 organizations, each proposing several projects and accepting applicants proposals. , and within each one you can choose between different projects that they propose to the applicants. If you are accepted into the program, you will contribute to the selected project in a 3 month internship, 40 hours a week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.gnome.org/outreachy/&quot;&gt;Outreachy&lt;/a&gt;&lt;/strong&gt;, formerly Outreach Program for Women (OPW), is very similar to GSoC, with the main difference that is aimed at minorities, so it is mainly directed towards women and people whose minority is underrepresented in technology. The other difference is that it is held twice a year, while GSoC is only held once.&lt;/p&gt;
+
+&lt;p&gt;Google Summer of Code will get its participants from a bigger pool, and therefore, from what I have seen, is more competitive. But the number of accepted interns is also hugely different: while GSoC will accept about 1300 participants, Outreachy accepts about 40. This is also because the number of people who applies to Outreachy is much less.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-should-you-participate&quot;&gt;Why should you participate?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;You’ll be working for three months in an organization you like a lot&lt;/li&gt;
+  &lt;li&gt;You will have the opportunity to participate in a big open source project&lt;/li&gt;
+  &lt;li&gt;You will have a dedicated mentor to follow you and your work directly&lt;/li&gt;
+  &lt;li&gt;You will learn a lot!&lt;/li&gt;
+  &lt;li&gt;It will look nice on your curriculum&lt;/li&gt;
+  &lt;li&gt;And if all this isn’t enough, you’ll be paid very nicely.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, that’s all for now. Thanks for reading (:&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 May 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/google_summer_of_code,/outreachy/2017/05/09/getintogsoc.html</link>
+        <guid isPermaLink="true">http://localhost:4000/google_summer_of_code,/outreachy/2017/05/09/getintogsoc.html</guid>
+        
+        
+        <category>google_summer_of_code,</category>
+        
+        <category>outreachy</category>
+        
+      </item>
+    
+  </channel>
+</rss>
